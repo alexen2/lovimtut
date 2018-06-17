@@ -1,0 +1,62 @@
+div.cat
+	div.cat__body
+		a(id="m_rt")
+
+		include ../title-section/title-section.pug
+		+title-section('Мёд разнотравный')
+
+		include ../product/product.pug
+
+		ul.cat__list
+			li.cat__item
+				+product({title: 'Мёд разнотравный', img: 'product__1.jpg', weight: 'big'})
+
+			li.cat__item
+				+product({title: 'Мёд разнотравный', img: 'product__2.jpg', weight: 'small'})
+
+			li.cat__item
+				+product({title: 'Мёд разнотравный', img: 'product__3.jpg', weight: 'big'})
+
+			li.cat__item
+				+product({title: 'Мёд разнотравный', img: 'product__4.jpg', weight: 'big'})
+
+			li.cat__item
+				+product({title: 'Мёд разнотравный', img: 'product__1.jpg', weight: 'small'})
+
+		a(id="m_donn")
+		+title-section('Мёд донниковый')
+
+		ul.cat__list
+			li.cat__item
+				+product({title: 'Мёд разнотравный', img: 'product__2.jpg', weight: 'big'})
+
+			li.cat__item
+				+product({title: 'Мёд разнотравный', img: 'product__3.jpg', weight: 'big'})
+
+			li.cat__item
+				+product({title: 'Мёд разнотравный', img: 'product__4.jpg', weight: 'small'})
+
+		a(id="m_grech")
+		+title-section('Мёд гречишный')
+
+		ul.cat__list
+			li.cat__item
+				+product({title: 'Мёд разнотравный', img: 'product__3.jpg', weight: 'big'})
+
+			li.cat__item
+				+product({title: 'Мёд разнотравный', img: 'product__4.jpg', weight: 'big'})
+
+			li.cat__item
+				+product({title: 'Мёд разнотравный', img: 'product__3.jpg', weight: 'small'})
+
+	div.cat__sidebar
+		div.row
+			div.col-12
+				include ../menu-cat/menu-cat.pug
+
+			div.col-12
+				p.text-center Если выбрали все что хотели
+
+				p.text-center
+					include ../btn/btn.pug
+					+btn({text: 'Оформить заказ', icon_l: 'icon icon__cart'})(class="btn--orange")

@@ -1,0 +1,22 @@
+header.header-mobile
+	div.container
+		div.header-mobile__body
+			div.header-mobile__left
+				include ../hamburger/hamburger.pug
+				+hamburger()(id="hamburger")
+
+				include ../logo/logo.pug
+
+			div.header-mobile__right
+				include ../icon/icon.pug
+				a.header-mobile__ico-search(href="#")
+					+icon('icon__search-big')
+
+				a(href="#")
+					+icon('icon__star')
+
+				a(href="#")
+					+icon('icon__cart')
+
+	div.header-mobile__search
+		div.container fgh

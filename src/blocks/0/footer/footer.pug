@@ -1,0 +1,23 @@
+footer.footer
+	div.footer__in
+		div.footer__body
+			include ../title-section/title-section.pug
+			+title-section('Следить за нами очень просто')
+
+			div.footer__social
+				include ../icon/icon.pug
+				ul.social
+					li.social__item
+						+icon('#')(class="icon__in-24")
+
+					li.social__item
+						+icon('#')(class="icon__ok-24")
+
+					li.social__item
+						+icon('#')(class="icon__vk-24")
+
+			p Истории, события, акции и скидки, интересные статьи о меде.
+
+		div.footer__bottom
+			p &copy; Чудомед. 2014-2018.
+			p ИП Поливода, ОГРН 316745600157450

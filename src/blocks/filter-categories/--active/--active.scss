@@ -1,0 +1,17 @@
+.filter-categories__item--active {
+	border: 1px solid #ffffff;
+	background-color: #ffffff;
+	color: #1EACF6;
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.12);
+	position: relative;
+}
+.filter-categories__item--active::before {
+	display: block;
+	width: 6px;
+	height: 6px;
+	position: absolute;
+	content: '';
+	left: 10px;
+	top: 12px;
+	background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABoSURBVHgBNYyxDcAgDASNk47GPTXT0LAKk1CmzCpkE0aIhJAiIazEEf7KPvtvCyGczrmr1vrAlxgjee8PI8MYI/feExHBnDO31pLRLzkiIggspdwIKwKZWVf4VVoXlWp3hVJf2mStzS8iND/uC9iusAAAAABJRU5ErkJggg==');
+}

@@ -1,0 +1,28 @@
+doctype html
+html(lang="ru")
+	include include/head.pug
+	+head('Home')
+
+	body
+		div(style="background-color: #f0f4f7;")
+			div.cat.cat--list
+				div.cat__item
+					include ../blocks/product/product.pug
+					+product({spec: 'Спецпредложение', img: 'product__img-04.jpg', title: 'Катушка SALMO Sniper Spin 5 2110FD', old_price: '5 500 руб', price: '4 500', not: 'Нет в наличии'})(class="product--list")
+
+				div.cat__item
+					+product({img: 'product__img-03.jpg', title: 'Воблер SALMO Jack', price: '550'})(class="product--list")
+
+				div.cat__item
+					+product({new: 'Новинка', img: 'product__img-02.jpg', title: 'Воблер SALMO Jack', price: '550'})(class="product--list")
+
+				div.cat__item
+					+product({con2: true, new: 'Новинка', spec: 'Спецпредложение', img: 'product__img-01.jpg', title: 'Удилище нахлыстовое SALMO Diamond SKY 34563456', price: '1 825', not: 'Нет в наличии'})(class="product--list")
+
+				div.cat__item
+					+product({new: 'Новинка', img: 'product__img-02.jpg', title: 'Воблер SALMO Jack', price: '550'})(class="product--list")
+
+				div.cat__item
+					+product({con2: true, new: 'Новинка', spec: 'Спецпредложение', img: 'product__img-01.jpg', title: 'Удилище нахлыстовое SALMO Diamond SKY 34563456', price: '1 825', not: 'Нет в наличии'})(class="product--list")
+
+		include include/script.pug

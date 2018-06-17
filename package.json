@@ -1,0 +1,22 @@
+{
+  "devDependencies": {
+    "browser-sync": "latest",
+    "del": "latest",
+    "gulp": "latest",
+    "gulp-autoprefixer": "latest",
+    "gulp-cheerio": "latest",
+    "gulp-concat": "latest",
+    "gulp-flatten": "latest",
+    "gulp-imagemin": "latest",
+    "gulp-notify": "latest",
+    "gulp-plumber": "latest",
+    "gulp-pug": "latest",
+    "gulp-rename": "latest",
+    "gulp-replace": "latest",
+    "gulp-sass": "latest",
+    "gulp-svg-sprite": "^1.4.0",
+    "gulp-svg-sprites": "latest",
+    "gulp-svgmin": "latest",
+    "run-sequence": "latest"
+  }
+}

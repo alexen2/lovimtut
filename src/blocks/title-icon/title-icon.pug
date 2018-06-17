@@ -1,0 +1,9 @@
+mixin title-icon(data)
+	div.title-icon(class!=attributes.class)
+		div.title-icon__icon
+			include ../icon/icon.pug
+			+icon(data.icon)
+
+		h2!=data.title
+
+		p!=data.text

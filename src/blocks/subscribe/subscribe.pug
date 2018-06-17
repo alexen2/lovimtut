@@ -1,0 +1,10 @@
+div.subscribe
+	h2 Подпишись!
+
+	p Новинки, cкидки, предложения!
+
+	form.subscribe__form
+		input(type="text", placeholder="Введите адрес ел. почты")
+			
+		include ../btn/btn.pug
+		+btn({text: 'Подписаться'})

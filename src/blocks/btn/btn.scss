@@ -1,0 +1,34 @@
+.btn {
+	padding: 0;
+	border: 1px solid transparent;
+	border-radius: 5px;
+	display: inline-block;
+	font-family: $font-main;
+	color: #ffffff;
+	background-color: $color-blue;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+.btn:hover {
+	cursor: pointer;
+	background-color: $color-blue;
+	color: #ffffff;
+}
+.btn__text {
+	font-size: 14px;
+	font-weight: 500;  
+	margin: 0 28px;
+	line-height: 40px;
+}
+.icon+.btn__text {
+  margin-left: -14px;
+}
+.btn__text:not(:last-child) {
+	margin-right: -14px;
+}
+.btn .icon {
+	margin: 0 28px;
+}
+.btn .icon:only-of-type {
+	margin: 0;
+}

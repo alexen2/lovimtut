@@ -1,0 +1,12 @@
+.logo img{
+	display: inline-block;
+	width: 96px;
+	transition: opacity $animation-speed;
+
+	@include media-breakpoint-up(md){
+		width: 200px;
+	}
+}
+.logo img:hover {
+	opacity: 0.7;
+}

@@ -1,0 +1,10 @@
+doctype html
+html(lang="ru")
+	include include/head.pug
+	+head('Home')
+
+	body
+		div(style="background-color: #f0f4f7;")
+			include ../blocks/cat/cat.pug
+
+		include include/script.pug

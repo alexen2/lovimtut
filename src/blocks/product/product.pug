@@ -1,0 +1,56 @@
+mixin product(data)
+	article.product(class!=attributes.class)
+		- var con2 = ''
+		if(data.con2)
+			-var con2 = 'product__conditions--big'
+	
+		div.product__conditions(class=con2)
+			if(data.new)
+				div.product__new
+					span Новинка
+
+			if(data.spec)
+				div.product__spec
+					span Спецпредложение
+					
+		div.product__img
+			a(href="#")
+				img(src="images/"+data.img, alt=data.title)
+
+		div.product__body
+			div.product__detail
+				a(href="#")
+					h2.product__title!=data.title
+
+				div.product__price-block
+					span.product__old-price!=data.old_price
+
+					div.product__price-not
+						span.product__price!=data.price
+							b руб
+
+						if(data.not)
+							span.product__not!=data.not
+
+			div.product__info
+				div.product__feature
+					span
+						include ../icon/icon.pug
+						i
+							+icon('icon__shield')
+
+						|Гарантия на товар 1 год
+					span
+						i
+							+icon('icon__aircraft')
+
+						|Доставка по РФ бесплатно
+					span
+						i
+							+icon('icon__gift')
+
+						|Блесна в подарок
+				div.product__action
+					include ../btn/btn.pug
+					+btn({icon_l: 'icon__star'})(class="product__btn-star")
+					+btn({text: 'Выбрать'})(class="product__btn-select")
