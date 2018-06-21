@@ -1,13 +1,98 @@
 .home-top {
 	background-image: url(../images/home-top__small.jpg);
-	background-position: top left;
+	background-position: bottom left;
 	background-repeat: no-repeat;
 	background-size: cover;
+	padding-bottom: 52px;
 
+	@media(min-width: 768px) {
+		padding-bottom: 92px;
+	}
 	@media(min-width: 992px) {
 		background-image: url(../images/home-top.jpg);
 	}
 }
 .home-top h1 {
 	margin-top: 0;
+	margin-bottom: 38px;
+	padding-top: 52px;
+	font-size: 30px;
+	font-weight: 900;
+	line-height: 35px;
+	color: #ffffff;
+	text-shadow: 0px 2px 30px rgba(31, 56, 66, 0.5);
+
+	@media(min-width: 768px) {
+		margin-bottom: 60px;
+		padding-top: 122px;
+		font-size: 54px;
+		line-height: 60px;
+		max-width: 580px;
+	}
+	@media(min-width: 1200px) {
+		margin-bottom: 50px;
+		max-width: 100%;
+	}
+}
+.home-top__desc {
+	margin-top: 0;
+	margin-left: 19px;
+	margin-bottom: 12px;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 20px;
+	color: #FAFAFA;
+	position: relative;
+	max-width: 215px;
+	text-align: right;
+	z-index: 2;
+
+	@media(min-width: 768px) {
+		margin-left: 30px;
+		margin-bottom: 62px;
+		font-size: 30px;
+		line-height: 30px;
+		max-width: 470px;
+		text-align: left;
+	}
+	@media(min-width: 1200px) {
+		max-width: 100%;
+		margin-bottom: 74px;
+	}
+}
+.home-top__desc span {
+	font-weight: 400;
+}
+.home-top__desc::before {
+	position: absolute;
+	top: -16px;
+	left: -19px;
+	content: "";
+	display: block;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background-color: #1EACF6;
+	z-index: -1;
+
+	@media(min-width: 768px) {
+		top: -12px;
+		left: -28px;
+		width: 70px;
+		height: 70px;
+	}
+	@media(min-width: 1200px) {
+		top: -19px;
+	}
+}
+.home-top__slider {
+	max-width: 280px;
+
+	@media(min-width: 768px) {
+		padding-left: 23px;
+	}
+	@media(min-width: 1200px) {
+		padding-left: 0;
+		max-width: 840px;
+	}
 }

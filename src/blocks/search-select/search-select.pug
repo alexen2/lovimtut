@@ -1,0 +1,9 @@
+div.search-select
+	form.search-select__form(action="/", method="post")
+		input(type="text", placeholder="Поиск по сайту")
+
+		div.search-select__select
+			span Весь каталог
+
+		include ../btn/btn.pug
+		+btn({icon_l: 'icon__search', type: 'submit'})

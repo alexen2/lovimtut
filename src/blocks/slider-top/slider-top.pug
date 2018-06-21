@@ -1,2 +1,23 @@
 div.slider-top
-	p slider-top
+	div.slider-top__body
+		ul.slider-top__list.swiper-wrapper
+			li.slider-top__item.swiper-slide
+				include ../item-slide/item-slide.pug
+				+item-slide({title: 'ZETRIX Ambition-X', img: 'item-slide__01.png'})
+
+			li.slider-top__item.swiper-slide
+				+item-slide({title: 'MUKAI Air-Stick', img: 'item-slide__02.png'})
+
+			li.slider-top__item.swiper-slide
+				+item-slide({title: 'ZETRIX Ambition-X', img: 'item-slide__01.png'})
+
+			li.slider-top__item.swiper-slide
+				+item-slide({title: 'ZETRIX Ambition-X', img: 'item-slide__01.png'})
+
+			li.slider-top__item.swiper-slide
+				+item-slide({title: 'MUKAI Ambition-X', img: 'item-slide__02.png'})
+
+	div.swiper-button-next
+	div.swiper-button-prev
+
+	div.slider-top__pag

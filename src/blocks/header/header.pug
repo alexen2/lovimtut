@@ -1,1 +1,43 @@
 header.header
+	include ../top/top.pug
+
+	div.header__body
+		div.container
+			div.header__body--in
+				div.header__logo
+					include ../logo/logo.pug
+
+				div.header__search
+					include ../search-select/search-select.pug
+
+				div.header__phone
+					a(href="tel:88002522222")
+						i
+							+icon('icon__phone')
+
+						span 8 800 252 22 22
+
+				div.header__city
+					div.header__city-top Доставим надёжно и быстро!
+
+					div.header__cit-bottom
+						span.header__city-name Город:
+
+						div.header__city-select
+							span Москва
+
+				div.header__icon
+					a(href="#")
+						i
+							+icon('icon__star')
+
+						span 5
+
+					a(href="#")
+						i
+							+icon('icon__cart')
+
+						span 2
+
+	div.header__menu
+		include ../menu/menu.pug

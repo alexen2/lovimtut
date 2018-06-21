@@ -1,0 +1,6 @@
+div.search
+	form.search__form(action="/", method="post")
+		input(type="text", placeholder="Поиск по сайту")
+
+		include ../btn/btn.pug
+		+btn({icon_l: 'icon__search', type: 'submit'})

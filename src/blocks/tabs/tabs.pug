@@ -1,33 +1,55 @@
 div.tabs
 	ul
-		li
+		li.tabs__icon
 			include ../icon/icon.pug
-			+icon('icon__youtube')
+			+icon('icon__rod')
 
-		li
-			+icon('icon__wave')
+		li.tabs__icon
+			+icon('icon__spoon')
 
-		li
-			+icon('icon__search')
+		li.tabs__icon
+			+icon('icon__nettle')
 
-		li
-			+icon('icon__search')
+		li.tabs__icon
+			+icon('icon__hook')
 
-		li
-			+icon('icon__search')
+		li.tabs__icon
+			+icon('icon__vest')
 
 	div.tabs__body
-		div.tabs__tab.tabs__tab-active
-			p 111111111
+		div.tabs__tab
+			include ../item-choice/item-choice.pug
 
 		div.tabs__tab
-			p 111111111
+			div.item-choice(id="item-choice__2")
+				div.item-choice__scroller
+					ul.item-choice__list
+						li.item-choice__item
+							span 111111 
+
+						li.item-choice__item
+							span 2222222 
+
+						li.item-choice__item
+							span 333333 
+
+						li.item-choice__item
+							span sdghjdf 
+
+						li.item-choice__item
+							span sdghdfhjfghjdf 
+
+						li.item-choice__item
+							span fghjfgh 
+
+					div.item-choice__line-bar
+						div.item-choice__bar
 
 		div.tabs__tab
-			p 111111111
+			p 333333333
 
 		div.tabs__tab
-			p 111111111
+			p 444444444
 
 		div.tabs__tab
-			p 111111111
+			p 555555555

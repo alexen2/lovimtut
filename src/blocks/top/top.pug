@@ -1,0 +1,36 @@
+div.top
+	div.container
+		div.top__row
+			div.top__menu
+				ul
+					li
+						a(href="#") О компании
+					li
+						a(href="#") Доставка и оплата
+					li
+						a(href="#") Помощь при выборе
+					li
+						a(href="#") Акции
+					li
+						a(href="#") Контакты
+
+			div.top__info
+				span Режим работы:
+				span Пн - Пт
+				span 10:00 - 20:00, Сб - Вс
+				span Выходные
+
+			div.top__icons
+				include ../icon/icon.pug
+
+				a(href="#")
+					i
+						+icon('icon__registration')
+
+					span Регистрация
+
+				a(href="#")
+					i
+						+icon('icon__login')
+
+					span Вход

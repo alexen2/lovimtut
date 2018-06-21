@@ -1,0 +1,10 @@
+mixin product-choice(img, price, title)
+	div.product-choice
+		a.product-choice__img(href="#")
+			img(src="images/"+img, alt="")
+		div.product-choice__text
+			span.product-choice__price!=price
+				b руб
+
+			a.product-choice__title(href="#")
+				span!=title

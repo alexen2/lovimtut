@@ -1,0 +1,11 @@
+mixin item-slide(data)
+	a.item-slide(href="#", class!=attributes.class)
+		div.item-slide__img
+			img(src="images/"+data.img, alt=data.title)
+
+		i
+			include ../icon/icon.pug
+			+icon('icon__wave')
+
+		span.item-slide__title
+			span!=data.title
