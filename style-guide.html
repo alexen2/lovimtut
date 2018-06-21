@@ -5,6 +5,7 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <title>Style Guide</title>
+      <link href="css/baron.css" rel="stylesheet">
       <link href="css/style.css" rel="stylesheet"><!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
@@ -30,7 +31,18 @@
         </div>
       </div>
       <div class="header-mobile__search">
-        <div class="container">fgh</div>
+        <div class="container">
+          <div class="search">
+            <form class="search__form" action="/" method="post">
+              <input type="text" placeholder="Поиск по сайту">
+                            <button class="btn" type="submit" role="button"><span class="icon__search">
+                                              <svg class="icon icon__search ">
+                                                <use xlink:href="images/svg/symbols.svg#icon__search"></use>
+                                              </svg></span>
+                            </button>
+            </form>
+          </div>
+        </div>
       </div>
     </header><br><br>
     <div style="background-color: #f0f4f7; padding: 50px 0;">
@@ -538,6 +550,8 @@
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/svg4everybody.min.js"></script>
     <script>$(document).ready(function () {	svg4everybody({});});</script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/baron.min.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
