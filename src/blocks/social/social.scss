@@ -1,0 +1,16 @@
+.social {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 40px;
+	height: 40px;
+	border: 1px solid #ffffff;
+	border-radius: 50%;
+}
+.social:hover {
+	cursor: pointer;
+	opacity: 0.7;
+}
+.social svg {
+	fill: #d9d9d9;
+}

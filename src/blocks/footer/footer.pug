@@ -1,0 +1,76 @@
+footer.footer
+	div.footer__top
+		div.footer__menu
+			div
+				include ../menu-footer/menu-footer.pug
+				+menu-footer({
+					title: 'ЛЕСКИ',
+					menu: 1
+				})
+
+			div
+				+menu-footer({
+					title: 'ДОСТАВКА И ОПЛАТА',
+					menu: 1
+				})
+				
+			div
+				+menu-footer({
+					title: 'ТОВАРЫ',
+					menu: 2
+				})
+
+		div.footer__contacts
+			h3 ПО ВСЕМ ВОПРОСАМ 
+
+			div
+				p
+					i
+						include ../icon/icon.pug
+						+icon('icon__mail')
+
+					a(href="mailto:lovimtut@mail.ru") lovimtut@mail.ru
+
+				p
+					i
+						+icon('icon__phone')
+
+					a(href="tel:88002522222") 8 800 252 22 22
+
+	div.footer__border
+		
+	div.footer__icons
+		div.footer__ico-money
+			ul
+				li
+					img(src="images/footer__yandex.png", alt="ico yandex")
+				li
+					img(src="images/footer__qiwi.png", alt="ico qiwi")
+				li
+					img(src="images/footer__webmoney.png", alt="ico webmoney")
+				li
+					img(src="images/footer__mastercard.png", alt="ico mastercard")
+				li
+					img(src="images/footer__visa.png", alt="ico visa")
+				li
+					img(src="images/footer__mir.png", alt="ico mir")
+
+		div.footer__border.footer__border--small
+
+		div.footer__ico-soc
+			ul
+				li
+					include ../social/social.pug
+					+social({link: '#', icon: 'icon__vk'})
+				li
+					+social({link: '#', icon: 'icon__facebook'})
+				li
+					+social({link: '#', icon: 'icon__classmates'})
+				li
+					+social({link: '#', icon: 'icon__tweet'})
+				li
+					+social({link: '#', icon: 'icon__youtube'})
+
+	div.footer__bottom
+		span 2018 | &copy; Lovimtut.ru | 
+			a(href="/") Карта сайта

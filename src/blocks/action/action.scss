@@ -1,0 +1,56 @@
+.action {
+	display: block;
+	width: 100%;
+	padding: 35px 40px 89px 40px;
+	background-image: url(../images/action__1.jpg);
+	background-size: 100%;
+	background-position: bottom center;
+	background-repeat: no-repeat;
+	box-sizing: border-box;
+
+	@media(min-width: 768px) {
+		width: 690px;
+		padding: 35px 0 40px 40px;
+		background-image: url(../images/action__2.jpg);
+		background-size: cover;
+		background-position: right bottom;
+	}
+	@media(min-width: 1200px) {
+		width: 100%;
+	}
+}
+.action h2 {
+	@extend .h2;
+	margin: 0;
+	font-size: 36px;
+	color: #1EACF6;
+}
+.action p {
+	@extend .text2;
+	margin: 0;
+	color: #363942;
+	font-size: 14px;
+	line-height: 20px;
+	padding-top: 8px;
+	padding-bottom: 25px;
+
+	@media(min-width: 768px) {
+		width: 260px;
+		padding-top: 13px;
+		padding-bottom: 30px;
+		font-size: 20px;
+		line-height: 30px;
+	}
+	@media(min-width: 1200px) {
+		padding-bottom: 42px;
+	}
+}
+.action .btn {
+	width: 100%;
+	max-width: 200px;
+
+	@media(min-width: 768px) {
+		margin: 0;
+		max-width: 180px;
+	}
+}

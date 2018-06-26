@@ -1,0 +1,46 @@
+mixin menu-footer(data)
+	div.menu-footer
+		div.menu-footer__header
+			h3.menu-footer__title!=data.title
+
+		div.menu-footer__body
+			if(data.menu == 2)
+				ul
+					li
+						a(href="#") О нас
+					
+					li
+						a(href="#") Гарантии
+
+					li
+						a(href="#") Консультация
+
+					li
+						a(href="#") Новости
+
+				ul
+					li
+						a(href="#") О нас
+					
+					li
+						a(href="#") Гарантии
+
+					li
+						a(href="#") Консультация
+
+					li
+						a(href="#") Новости
+
+			else
+				ul
+					li
+						a(href="#") О нас
+					
+					li
+						a(href="#") Гарантии
+
+					li
+						a(href="#") Консультация
+
+					li
+						a(href="#") Новости

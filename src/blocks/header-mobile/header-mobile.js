@@ -1,5 +1,7 @@
 $(document).ready(function() {
-	$('.header-mobile__ico-search').click(function () {
+	$('.header-mobile__ico-search').click(function(event) {
+		event.preventDefault();
+
 		var header_mobile__search = $('.header-mobile__search');
 
 		if(header_mobile__search.hasClass('header-mobile__search--show')) {
@@ -7,5 +9,13 @@ $(document).ready(function() {
 		} else {
 			header_mobile__search.addClass('header-mobile__search--show');
 		}		
+	});
+
+
+	$('#hamburger').click(function() {
+		var menu_mobile = $('.menu-mobile');
+		menu_mobile.toggleClass('menu-mobile--show');
+
+		
 	});
 });
