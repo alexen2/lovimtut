@@ -87,6 +87,14 @@ window.onload = function() {
 }
 
 $(document).ready(function() {	
+	$('.menu__level-2__dropdown').hover(function() {
+    $(this).children('.menu__level-3').show(300); 
+	}, 
+	function() {
+	    $(this).children('.menu__level-3').hide(300);
+	});	
+});
+$(document).ready(function() {	
 	$('.menu-footer__title').click(function () {
 		if (jQuery(window).width() < 768 ) {
 			var menu = $(this).parent().parent();

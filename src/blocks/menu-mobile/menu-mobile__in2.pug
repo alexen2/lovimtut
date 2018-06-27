@@ -1,20 +1,45 @@
 div.menu-mobile__in
-	ul.menu-mobile__list.menu-mobile__.menu-mobile__navcat
+	ul.menu-mobile__list.menu-mobile__cat
 		li.menu-mobile__item.menu-mobile__item--white-b
 			span.menu-mobile__close
 				+icon('icon__arrow-left')
 
 		li.menu-mobile__item 
-			a(href="#") Спининговые
+			a(href="#") 
+				+icon('icon__spinning')
+				|Спининговые
 
 		li.menu-mobile__item 
-			a(href="#") Кастинговые
+			a(href="#") 
+				+icon('icon__casting')
+				|Кастинговые
 
 		li.menu-mobile__item.menu-mobile__dropdown
-			a.menu-mobile__nav(href="#") Штекерные
+			a.menu-mobile__nav(href="#") 
+				+icon('icon__plug-in')
+				|Штекерные
+
+			div.menu-mobile__in
+				ul.menu-mobile__list
+					li.menu-mobile__item.menu-mobile__item--white-b
+						span.menu-mobile__close
+							+icon('icon__arrow-left')
+
+					li.menu-mobile__item 
+						a(href="#") Штекерные 1
+
+					li.menu-mobile__item 
+						a(href="#") Штекерные 2
+
+					li.menu-mobile__item 
+						a(href="#") Штекерные 3
 
 		li.menu-mobile__item 
-			a(href="#") Поплавочные
+			a(href="#") 
+				+icon('icon__float')
+				|Поплавочные
 
 		li.menu-mobile__item 
-			a(href="#") Фидерные
+			a(href="#") 
+				+icon('icon__feeder')
+				|Фидерные

@@ -3,9 +3,7 @@ mixin item-slide(data)
 		div.item-slide__img
 			img(src="images/"+data.img, alt=data.title)
 
-		i
-			include ../icon/icon.pug
-			+icon('icon__wave')
+		img.item-slide__ico(src="images/item-slide__wave.svg", alt="")
 
 		span.item-slide__title
 			span!=data.title
