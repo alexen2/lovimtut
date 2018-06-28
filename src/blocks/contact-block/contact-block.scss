@@ -1,0 +1,18 @@
+.contact-block {
+	@media(min-width: 1200px) {
+		display: flex;
+		flex-direction: row;
+		margin-bottom: 100px;
+	}
+}
+.contact-block .contact-list {
+	@media(min-width: 1260px) {
+		flex: 0 0 680px;
+		box-sizing: border-box;
+	}
+}
+.contact-block .write-us {
+	@media(min-width: 1200px) {
+		flex-grow: 2;
+	}
+}

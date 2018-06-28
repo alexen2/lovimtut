@@ -1,0 +1,27 @@
+doctype html
+html(lang="ru")
+	include include/head.pug
+	+head('Контакты')
+
+	body
+		include ../blocks/header-mobile/header-mobile.pug
+		include ../blocks/header/header.pug
+
+		div.container-1580
+			h1 Контакты
+
+		div.container-fluid-sm
+			div.contact-block
+				include ../blocks/contact-list/contact-list.pug
+
+				include ../blocks/write-us/write-us.pug
+
+		div.big-map
+			iframe(src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2185.3978079881877!2d37.62248457442087!3d55.68142743872672!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1530126059056",  frameborder="0", style="border:0", allowfullscreen)
+
+		include ../blocks/bottom/bottom.pug
+		+bottom({subscribe: true})
+
+		include ../blocks/menu-mobile/menu-mobile.pug
+
+		include include/script.pug

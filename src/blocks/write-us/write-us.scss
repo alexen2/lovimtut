@@ -1,0 +1,57 @@
+.write-us {
+	padding: 30px 20px 42px 20px;
+	background-image: url(../images/write-us_1.jpg);
+	background-size: cover;
+	background-position: right;
+	text-align: center;
+
+	@media(min-width: 768px) {
+		text-align: left;
+		background-image: url(../images/write-us_2.jpg);
+		padding: 92px 40px 90px 40px;
+		margin-bottom: 40px;
+	}
+	@media(min-width: 1200px) {
+		padding: 90px 6px 90px 40px;
+		margin-bottom: 0;
+	}
+	@media(min-width: 1440px) {
+		padding: 97px 6px 90px 80px;
+	}
+}
+.write-us h2 {
+	@extend .h2;
+	margin: 0;
+	color: #ffffff;
+}
+.write-us p {
+	margin: 0;
+	padding: 15px 0 22px 0;
+	font-size: 14px;
+	font-weight: 500;
+	color: #000000;
+
+	@media(min-width: 768px) {
+		font-size: 24px;
+		padding: 37px 0 70px 0;
+	}
+}
+.write-us .btn {
+	width: 280px;
+	margin: 0 auto;
+	padding: 0 43px 0 43px;
+	border: 1px solid #ffffff;
+	line-height: 36px;
+	border-radius: 5px;
+	background-color: #ffffff;
+
+	@media(min-width: 768px) {
+		width: 220px;
+		margin-left: 0;
+	}
+}
+.write-us .btn__text {
+	color: #1EACF6;
+	font-weight: 500;
+	margin: 0;
+}

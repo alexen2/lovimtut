@@ -1,12 +1,12 @@
 .header {
 	display: none;
+	background-color: #ffffff;
 
 	@media(min-width: 1200px) {
 		display: block;
 	}
 }
-.header__body {
-	background-color: #ffffff;
+.header__body {	
 	border-bottom: 1px solid #CFCFCF;
 }
 .header__body--in {

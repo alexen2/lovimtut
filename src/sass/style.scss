@@ -2,6 +2,7 @@
 @import 'variables';
 @import 'base';
 
+@import '../blocks/select/select';
 @import '../blocks/btn/btn';
 @import '../blocks/logo/logo';
 @import '../blocks/hamburger/hamburger';
@@ -16,6 +17,9 @@
 @import '../blocks/menu/menu';
 @import '../blocks/menu-mobile/menu-mobile';
 
+@import '../blocks/contact-list/contact-list';
+@import '../blocks/write-us/write-us';
+@import '../blocks/contact-block/contact-block';
 @import '../blocks/brands/brands';
 @import '../blocks/search/search';
 @import '../blocks/action/action';
