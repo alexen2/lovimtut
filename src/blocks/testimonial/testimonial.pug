@@ -1,0 +1,12 @@
+mixin testimonial(data)
+	article.testimonial
+		div.testimonial__header
+			div.testimonial__img
+				img(src="images/"+data.img, alt=data.name)
+					
+			div.testimonial__info
+				h2.testimonial__title!=data.name
+				span.testimonial__date!=data.date
+
+		div.testimonial__body
+			p.testimonial__text!=data.text
