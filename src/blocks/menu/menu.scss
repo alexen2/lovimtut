@@ -61,6 +61,7 @@
 	box-sizing: border-box;
 	background-color: #363942;
 	transition: all 0.6s;
+	z-index: 1000;
 
 	@media(min-width: 1320px) {
 		padding: 0 70px;

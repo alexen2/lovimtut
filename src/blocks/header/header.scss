@@ -51,10 +51,46 @@
 	font-size: 14px;
 	color: #363942;
 	line-height: 18px;
+	position: relative;
 
 	@media(min-width: 1720px) {
 		padding-left: 100px;
 	}
+}
+.header__city-select {
+	display: flex;
+	flex-direction: row;
+	padding-top: 3px;
+}
+.header__city-select .item {
+	padding-top: 2px;
+	line-height: 14px;
+	color: #1EACF6;
+	border-bottom: 2px dotted #1EACF6;
+	position: relative;
+	font-size: 14px;
+}
+.header__city-select .item:before {
+	position: absolute;
+	top: 5px;
+	right: -15px;
+	display: block;
+	content: "";
+	width: 6px;
+	height: 6px;
+	border-right: 1px solid #1EACF6;
+	border-bottom: 1px solid #1EACF6;
+	transform: rotate(45deg);
+}
+.header__city-select .focus .item:before {
+	top: 8px;
+	transform: rotate(-135deg);
+}
+.header__city-select .icon {
+	width: 13px;
+	height: 16px;
+	fill: #1EACF6;
+	margin-right: 10px;
 }
 .header__city-top,
 .header__city-name {

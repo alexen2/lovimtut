@@ -3,7 +3,8 @@ div.search-select
 		input(type="text", placeholder="Поиск по сайту")
 
 		div.search-select__select
-			span Весь каталог
+			include ../select/select.pug
+			+select({name: 'search_cat', placeholder: 'Весь каталог', selected: 'Весь каталог'})
 
 		include ../btn/btn.pug
 		+btn({icon_l: 'icon__search', type: 'submit'})

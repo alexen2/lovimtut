@@ -21,10 +21,13 @@ header.header
 					div.header__city-top Доставим надёжно и быстро!
 
 					div.header__cit-bottom
-						span.header__city-name Город:
+						span.header__city-name Город:							
 
 						div.header__city-select
-							span Москва
+							+icon('icon__geo')
+							
+							include ../select/select.pug
+							+select({name: 'city', placeholder: 'город...', selected: 'Москва'})
 
 				div.header__icon
 					a(href="#")

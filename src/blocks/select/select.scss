@@ -1,5 +1,18 @@
 @import 'select__selectize';
 
 .select {
-
+	border: none;
+	width: 120px;
+}
+.select.selectize-control.single .selectize-input:after {
+	content: none;
+}
+.select .selectize-input {
+	padding: 0;
+	border-radius: 0;
+	box-shadow: none;
+	border: none;
+}
+.selectize-dropdown {
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
 }

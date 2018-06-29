@@ -1,5 +1,11 @@
-select(id="select1" class="demo-default" data-placeholder="Select a person...")
-	option(value="")
-	option(value="1") 1
-	option(value="2") 2
-	option(value="3") 3
+mixin select(data)
+	select.select(id=data.name, class!=attributes.class, data-placeholder=data.placeholder, name=data.name)
+		option(value="")
+
+		- var n = 0;
+			while n < 3
+				- n++
+				option(value=n) text 
+					!=n
+
+		option(selected, value=data.selected)!=data.selected

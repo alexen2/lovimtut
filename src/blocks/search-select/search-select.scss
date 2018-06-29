@@ -33,12 +33,26 @@
 	width: 137px;
 	padding-left: 9px;
 	font-size: 14px;
-	line-height: 38px;
+	padding-top: 10px;
 
 	@media(min-width: 1720px) {
 		padding-left: 19px;
 		width: 178px;
 	}
+}
+.search-select .select.selectize-control.single .selectize-input:after {
+	content: "";
+	top: 7px;
+	border: none;
+	width: 6px;
+	height: 6px;
+	border-right: 1px solid #000000;
+	border-bottom: 1px solid #000000;
+	transform: rotate(45deg);
+}
+.search-select .select.selectize-control.single .focus.selectize-input:after {
+	top: 12px;
+	transform: rotate(-135deg);
 }
 .search-select .btn{
 	width: 38px;
