@@ -78,7 +78,18 @@
               <div class="search-select">
                 <form class="search-select__form" action="/" method="post">
                   <input type="text" placeholder="Поиск по сайту">
-                  <div class="search-select__select"><span>Весь каталог</span></div>
+                  <div class="search-select__select">
+                                        <select class="select" id="search_cat" data-placeholder="Весь каталог" name="search_cat">
+                                          <option value=""></option>
+                                          <option value="1">text 1
+                                          </option>
+                                          <option value="2">text 2
+                                          </option>
+                                          <option value="3">text 3
+                                          </option>
+                                          <option selected value="Весь каталог">Весь каталог</option>
+                                        </select>
+                  </div>
                                     <button class="btn" type="submit" role="button"><span class="icon__search">
                                                           <svg class="icon icon__search ">
                                                             <use xlink:href="images/svg/symbols.svg#icon__search"></use>
@@ -93,8 +104,22 @@
                                     </svg></i><span>8 800 252 22 22</span></a></div>
             <div class="header__city">
               <div class="header__city-top">Доставим надёжно и быстро!</div>
-              <div class="header__cit-bottom"><span class="header__city-name">Город:</span>
-                <div class="header__city-select"><span>Москва</span></div>
+              <div class="header__cit-bottom"><span class="header__city-name">Город:							</span>
+                <div class="header__city-select">
+                                    <svg class="icon icon__geo ">
+                                      <use xlink:href="images/svg/symbols.svg#icon__geo"></use>
+                                    </svg>
+                                    <select class="select" id="city" data-placeholder="город..." name="city">
+                                      <option value=""></option>
+                                      <option value="1">text 1
+                                      </option>
+                                      <option value="2">text 2
+                                      </option>
+                                      <option value="3">text 3
+                                      </option>
+                                      <option selected value="Москва">Москва</option>
+                                    </select>
+                </div>
               </div>
             </div>
             <div class="header__icon"><a href="#"><i>
@@ -161,6 +186,13 @@
       </div>
     </header>
     <div class="container-1580">
+      <div class="breadcrumbs">
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Главная</a></li>
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Личный кабинет</a></li>
+          <li class="breadcrumbs__item breadcrumbs__item--active"><span>Мой профиль</span></li>
+        </ul>
+      </div>
       <h1>Контакты</h1>
     </div>
     <div class="container-fluid-sm">
@@ -297,12 +329,12 @@
             <div class="footer__icons">
               <div class="footer__ico-money">
                 <ul>
-                  <li><img src="images/footer__yandex.png" alt="ico yandex"></li>
-                  <li><img src="images/footer__qiwi.png" alt="ico qiwi"></li>
-                  <li><img src="images/footer__webmoney.png" alt="ico webmoney"></li>
-                  <li><img src="images/footer__mastercard.png" alt="ico mastercard"></li>
-                  <li><img src="images/footer__visa.png" alt="ico visa"></li>
-                  <li><img src="images/footer__mir.png" alt="ico mir"></li>
+                  <li><img src="images/footer__yandex.svg" alt="ico yandex"></li>
+                  <li><img src="images/footer__qiwi.svg" alt="ico qiwi"></li>
+                  <li><img src="images/footer__webmoney.svg" alt="ico webmoney"></li>
+                  <li><img src="images/footer__mastercard.svg" alt="ico mastercard"></li>
+                  <li><img src="images/footer__visa.svg" alt="ico visa"></li>
+                  <li><img src="images/footer__mir.svg" alt="ico mir"></li>
                 </ul>
               </div>
               <div class="footer__border footer__border--small"></div>

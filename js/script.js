@@ -94,17 +94,6 @@ $(document).ready(function() {
 	    $(this).children('.menu__level-3').hide(300);
 	});	
 });
-$(document).ready(function() {
-	$('.menu-mobile__nav').click(function() {
-		//var level_class = $(this).data('mob_level');
-		//$('.'+level_class).toggleClass(level_class + '--show');
-		$(this).next('.menu-mobile__in').toggleClass('menu-mobile__in--show');
-	});
-
-	$('.menu-mobile__close').click(function() {
-		$(this).parent().parent().parent().toggleClass('menu-mobile__in--show');
-	});
-});
 $(document).ready(function() {	
 	$('.menu-footer__title').click(function () {
 		if (jQuery(window).width() < 768 ) {
@@ -116,11 +105,27 @@ $(document).ready(function() {
 		}
 	});
 });
+$(document).ready(function() {
+	$('.menu-mobile__nav').click(function() {
+		//var level_class = $(this).data('mob_level');
+		//$('.'+level_class).toggleClass(level_class + '--show');
+		$(this).next('.menu-mobile__in').toggleClass('menu-mobile__in--show');
+	});
+
+	$('.menu-mobile__close').click(function() {
+		$(this).parent().parent().parent().toggleClass('menu-mobile__in--show');
+	});
+});
 $(function() {
-	$('#select1').selectize({
+	$('#city').selectize({
   	create: true,
   	sortField: 'text'
 	});
+
+	$('#search_cat').selectize({
+  	create: true,
+  	sortField: 'text'
+	});	
 });
 
 $(document).ready(function () {
