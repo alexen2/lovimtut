@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Отзывы</title>
+      <link href="css/baron.css" rel="stylesheet">
+      <link href="css/style.css" rel="stylesheet"><!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+    </head>
+  <body>
+    <header class="header-mobile">
+      <div class="container">
+        <div class="header-mobile__body">
+          <div class="header-mobile__left">
+                        <button class="hamburger hamburger--spin" type="button" id="hamburger"><span class="hamburger-box"><span class="hamburger-inner"></span></span></button><a class="logo" href="/"><img src="images/logo.svg" alt="lovimtut.ru"></a>
+          </div>
+          <div class="header-mobile__right"><a class="header-mobile__ico-search" href="#">
+                          <svg class="icon icon__search-big ">
+                            <use xlink:href="images/svg/symbols.svg#icon__search-big"></use>
+                          </svg></a><a href="#">
+                          <svg class="icon icon__star ">
+                            <use xlink:href="images/svg/symbols.svg#icon__star"></use>
+                          </svg></a><a href="#">
+                          <svg class="icon icon__cart ">
+                            <use xlink:href="images/svg/symbols.svg#icon__cart"></use>
+                          </svg></a>
+          </div>
+        </div>
+      </div>
+      <div class="header-mobile__search">
+        <div class="container">
+          <div class="search">
+            <form class="search__form" action="/" method="post">
+              <input type="text" placeholder="Поиск по сайту">
+                            <button class="btn" type="submit" role="button"><span class="icon__search">
+                                              <svg class="icon icon__search ">
+                                                <use xlink:href="images/svg/symbols.svg#icon__search"></use>
+                                              </svg></span>
+                            </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+    <header class="header">
+      <div class="top">
+        <div class="container">
+          <div class="top__row">
+            <div class="top__menu">
+              <ul>
+                <li><a href="#">О компании</a></li>
+                <li><a href="#">Доставка и оплата</a></li>
+                <li><a href="#">Помощь при выборе</a></li>
+                <li><a href="#">Акции</a></li>
+                <li><a href="#">Контакты</a></li>
+              </ul>
+            </div>
+            <div class="top__info"><span>Режим работы:</span><span>Пн - Пт</span><span>10:00 - 20:00, Сб - Вс</span><span>Выходные</span></div>
+            <div class="top__icons"><a href="#"><i>
+                                <svg class="icon icon__registration ">
+                                  <use xlink:href="images/svg/symbols.svg#icon__registration"></use>
+                                </svg></i><span>Регистрация</span></a><a href="#"><i>
+                                <svg class="icon icon__login ">
+                                  <use xlink:href="images/svg/symbols.svg#icon__login"></use>
+                                </svg></i><span>Вход</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header__body">
+        <div class="container">
+          <div class="header__body--in">
+            <div class="header__logo"><a class="logo" href="/"><img src="images/logo.svg" alt="lovimtut.ru"></a></div>
+            <div class="header__search">
+              <div class="search-select">
+                <form class="search-select__form" action="/" method="post">
+                  <input type="text" placeholder="Поиск по сайту">
+                  <div class="search-select__select">
+                                        <select class="select" id="search_cat" data-placeholder="Весь каталог" name="search_cat">
+                                          <option value=""></option>
+                                          <option value="1">text 1
+                                          </option>
+                                          <option value="2">text 2
+                                          </option>
+                                          <option value="3">text 3
+                                          </option>
+                                          <option selected value="Весь каталог">Весь каталог</option>
+                                        </select>
+                  </div>
+                                    <button class="btn" type="submit" role="button"><span class="icon__search">
+                                                          <svg class="icon icon__search ">
+                                                            <use xlink:href="images/svg/symbols.svg#icon__search"></use>
+                                                          </svg></span>
+                                    </button>
+                </form>
+              </div>
+            </div>
+            <div class="header__phone"><a href="tel:88002522222"><i>
+                                    <svg class="icon icon__phone ">
+                                      <use xlink:href="images/svg/symbols.svg#icon__phone"></use>
+                                    </svg></i><span>8 800 252 22 22</span></a></div>
+            <div class="header__city">
+              <div class="header__city-top">Доставим надёжно и быстро!</div>
+              <div class="header__cit-bottom"><span class="header__city-name">Город:							</span>
+                <div class="header__city-select">
+                                    <svg class="icon icon__geo ">
+                                      <use xlink:href="images/svg/symbols.svg#icon__geo"></use>
+                                    </svg>
+                                    <select class="select" id="city" data-placeholder="город..." name="city">
+                                      <option value=""></option>
+                                      <option value="1">text 1
+                                      </option>
+                                      <option value="2">text 2
+                                      </option>
+                                      <option value="3">text 3
+                                      </option>
+                                      <option selected value="Москва">Москва</option>
+                                    </select>
+                </div>
+              </div>
+            </div>
+            <div class="header__icon"><a href="#"><i>
+                                    <svg class="icon icon__star ">
+                                      <use xlink:href="images/svg/symbols.svg#icon__star"></use>
+                                    </svg></i><span>5</span></a><a href="#"><i>
+                                    <svg class="icon icon__cart ">
+                                      <use xlink:href="images/svg/symbols.svg#icon__cart"></use>
+                                    </svg></i><span>2</span></a></div>
+          </div>
+        </div>
+      </div>
+      <div class="header__menu">
+        <div class="container">
+          <nav class="menu">
+            <ul class="menu__list menu__level-1">
+              <li class="menu__item"><a href="#">Удилища</a>
+                <div class="menu__level-2">
+                  <ul>
+                    <li> <a href="#"> 
+                                          <svg class="icon icon__spinning ">
+                                            <use xlink:href="images/svg/symbols.svg#icon__spinning"></use>
+                                          </svg>Спининговые						</a></li>
+                    <li> <a href="#"> 
+                                          <svg class="icon icon__casting ">
+                                            <use xlink:href="images/svg/symbols.svg#icon__casting"></use>
+                                          </svg>Кастинговые</a></li>
+                    <li class="menu__level-2__dropdown"><a class="hhh" href="#"> 
+                                          <svg class="icon icon__plug-in ">
+                                            <use xlink:href="images/svg/symbols.svg#icon__plug-in"></use>
+                                          </svg>Штекерные</a>
+                      <div class="menu__level-3">
+                        <ul>
+                          <li> <a href="#">Штекерные 1</a></li>
+                          <li> <a href="#">Штекерные 2</a></li>
+                          <li> <a href="#">Штекерные 3</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li> <a href="#"> 
+                                          <svg class="icon icon__float ">
+                                            <use xlink:href="images/svg/symbols.svg#icon__float"></use>
+                                          </svg>Поплавочные</a></li>
+                    <li> <a href="#"> 
+                                          <svg class="icon icon__feeder ">
+                                            <use xlink:href="images/svg/symbols.svg#icon__feeder"></use>
+                                          </svg>Фидерные</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="menu__item"><a href="#">Катушки</a></li>
+              <li class="menu__item"><a href="#">Лески</a></li>
+              <li class="menu__item"><a href="#">Приманки</a></li>
+              <li class="menu__item"><a href="#">Крючки</a></li>
+              <li class="menu__item"><a href="#">Грузы</a></li>
+              <li class="menu__item"><a href="#">Хранение</a></li>
+              <li class="menu__item"><a href="#">Аксессуары</a></li>
+              <li class="menu__item"><a href="#">Одежда</a></li>
+              <li class="menu__item"><a href="#">Обувь</a></li>
+              <li class="menu__item"><a href="#">Лодки</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <div class="container-1580">
+      <div class="breadcrumbs">
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Главная</a></li>
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Личный кабинет</a></li>
+          <li class="breadcrumbs__item breadcrumbs__item--active"><span>Мой профиль</span></li>
+        </ul>
+      </div>
+      <h1>Отзывы о интернет-магазине "ЛовимТут"</h1>
+    </div>
+    <div class="container-fluid-sm">
+      <div class="testimonials">
+        <div class="testimonials__row">
+          <div class="testimonials__col">
+                        <article class="testimonial">
+                          <div class="testimonial__header">
+                            <div class="testimonial__img"><img src="images/testimonial__01.png" alt="Смирнов Павел Валерьевич"></div>
+                            <div class="testimonial__info">
+                              <h2 class="testimonial__title">Смирнов Павел Валерьевич</h2><span class="testimonial__date">2018-04-06</span>
+                            </div>
+                          </div>
+                          <div class="testimonial__body">
+                            <p class="testimonial__text">Большое спасибо друзья за Вашу работу,все пришло во время и отличного качества и по очень демократичной цене, выписывал катушку RYOBI а до этой покупки выписывал спиннинги и катушки DAIWA и тоже все было отлично ,еще раз большое спасибо удачи в работе и всех благ!!!</p>
+                          </div>
+                        </article>
+          </div>
+          <div class="testimonials__col">
+                        <article class="testimonial">
+                          <div class="testimonial__header">
+                            <div class="testimonial__img"><img src="images/testimonial__01.png" alt="Смирнов Павел Валерьевич"></div>
+                            <div class="testimonial__info">
+                              <h2 class="testimonial__title">Смирнов Павел Валерьевич</h2><span class="testimonial__date">2018-04-06</span>
+                            </div>
+                          </div>
+                          <div class="testimonial__body">
+                            <p class="testimonial__text">Цены конечно же подросли,до этого гораздо демократичнее было,ассортимент можно и расширить в отношении приманок в частности «спрут» не вся линейка воюлеров есть,сроки доставки в частности «СДЭК» впечатлили. Большое спасибо друзья за Вашу работу,все пришло во время и отличного качества и по очень демократичной цене, выписывал катушку RYOBI а до этой покупки выписывал спиннинги и катушки DAIWA и тоже все было отлично ,еще раз большое спасибо удачи в работе и всех благ!!!</p>
+                          </div>
+                        </article>
+          </div>
+          <div class="testimonials__col">
+                        <article class="testimonial">
+                          <div class="testimonial__header">
+                            <div class="testimonial__img"><img src="images/testimonial__01.png" alt="Смирнов Павел Валерьевич"></div>
+                            <div class="testimonial__info">
+                              <h2 class="testimonial__title">Смирнов Павел Валерьевич</h2><span class="testimonial__date">2018-04-06</span>
+                            </div>
+                          </div>
+                          <div class="testimonial__body">
+                            <p class="testimonial__text">Большое спасибо друзья за Вашу работу,все пришло во время и отличного качества и по очень демократичной цене, выписывал катушку RYOBI а до этой покупки выписывал спиннинги и катушки DAIWA и тоже все было отлично ,еще раз большое спасибо удачи в работе и всех благ!!!</p>
+                          </div>
+                        </article>
+          </div>
+          <div class="testimonials__col">
+                        <article class="testimonial">
+                          <div class="testimonial__header">
+                            <div class="testimonial__img"><img src="images/testimonial__01.png" alt="Смирнов Павел Валерьевич"></div>
+                            <div class="testimonial__info">
+                              <h2 class="testimonial__title">Смирнов Павел Валерьевич</h2><span class="testimonial__date">2018-04-06</span>
+                            </div>
+                          </div>
+                          <div class="testimonial__body">
+                            <p class="testimonial__text">Большое спасибо друзья за Вашу работу,все пришло во время и отличного качества и по очень демократичной цене, выписывал катушку RYOBI а до этой покупки выписывал спиннинги и катушки DAIWA и тоже все было отлично ,еще раз большое спасибо удачи в работе и всех благ!!!</p>
+                          </div>
+                        </article>
+          </div>
+          <div class="testimonials__col">
+                        <article class="testimonial">
+                          <div class="testimonial__header">
+                            <div class="testimonial__img"><img src="images/testimonial__01.png" alt="Смирнов Павел Валерьевич"></div>
+                            <div class="testimonial__info">
+                              <h2 class="testimonial__title">Смирнов Павел Валерьевич</h2><span class="testimonial__date">2018-04-06</span>
+                            </div>
+                          </div>
+                          <div class="testimonial__body">
+                            <p class="testimonial__text">Большое спасибо друзья за Вашу работу,все пришло во время и отличного качества и по очень демократичной цене, выписывал катушку RYOBI а до этой покупки выписывал спиннинги и катушки DAIWA и тоже все было отлично ,еще раз большое спасибо удачи в работе и всех благ!!!</p>
+                          </div>
+                        </article>
+          </div>
+          <div class="testimonials__col">
+                        <article class="testimonial">
+                          <div class="testimonial__header">
+                            <div class="testimonial__img"><img src="images/testimonial__01.png" alt="Смирнов Павел Валерьевич"></div>
+                            <div class="testimonial__info">
+                              <h2 class="testimonial__title">Смирнов Павел Валерьевич</h2><span class="testimonial__date">2018-04-06</span>
+                            </div>
+                          </div>
+                          <div class="testimonial__body">
+                            <p class="testimonial__text">Большое спасибо друзья за Вашу работу,все пришло во время и отличного качества и по очень демократичной цене, выписывал катушку RYOBI а до этой покупки выписывал спиннинги и катушки DAIWA и тоже все было отлично ,еще раз большое спасибо удачи в работе и всех благ!!!</p>
+                          </div>
+                        </article>
+          </div>
+        </div>
+      </div>
+    </div>
+        <div class="bottom">
+          <div class="bottom__subscribe">
+            <div class="container-1180">
+              <div class="subscribe">
+                <h2>Подпишись!</h2>
+                <p>Новинки, cкидки, предложения!</p>
+                <form class="subscribe__form">
+                  <input type="text" placeholder="Введите адрес ел. почты">
+                                <button class="btn" type="button" role="button"><span class="btn__text">Подписаться</span>
+                                </button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <footer class="footer">
+            <div class="footer__top">
+              <div class="footer__menu">
+                <div>
+                                <div class="menu-footer">
+                                  <div class="menu-footer__header">
+                                    <h3 class="menu-footer__title">ЛЕСКИ</h3>
+                                  </div>
+                                  <div class="menu-footer__body">
+                                    <ul>
+                                      <li><a href="#">О нас</a></li>
+                                      <li><a href="#">Гарантии</a></li>
+                                      <li><a href="#">Консультация</a></li>
+                                      <li><a href="#">Новости</a></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                </div>
+                <div>
+                                <div class="menu-footer">
+                                  <div class="menu-footer__header">
+                                    <h3 class="menu-footer__title">ДОСТАВКА И ОПЛАТА</h3>
+                                  </div>
+                                  <div class="menu-footer__body">
+                                    <ul>
+                                      <li><a href="#">О нас</a></li>
+                                      <li><a href="#">Гарантии</a></li>
+                                      <li><a href="#">Консультация</a></li>
+                                      <li><a href="#">Новости</a></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                </div>
+                <div>
+                                <div class="menu-footer">
+                                  <div class="menu-footer__header">
+                                    <h3 class="menu-footer__title">ТОВАРЫ</h3>
+                                  </div>
+                                  <div class="menu-footer__body">
+                                    <ul>
+                                      <li><a href="#">О нас</a></li>
+                                      <li><a href="#">Гарантии</a></li>
+                                      <li><a href="#">Консультация</a></li>
+                                      <li><a href="#">Новости</a></li>
+                                    </ul>
+                                    <ul>
+                                      <li><a href="#">О нас</a></li>
+                                      <li><a href="#">Гарантии</a></li>
+                                      <li><a href="#">Консультация</a></li>
+                                      <li><a href="#">Новости</a></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                </div>
+              </div>
+              <div class="footer__contacts">
+                <h3>ПО ВСЕМ ВОПРОСАМ </h3>
+                <div>
+                  <p><i>
+                                        <svg class="icon icon__mail ">
+                                          <use xlink:href="images/svg/symbols.svg#icon__mail"></use>
+                                        </svg></i><a href="mailto:lovimtut@mail.ru">lovimtut@mail.ru</a></p>
+                  <p><i>
+                                        <svg class="icon icon__phone ">
+                                          <use xlink:href="images/svg/symbols.svg#icon__phone"></use>
+                                        </svg></i><a href="tel:88002522222">8 800 252 22 22</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="footer__border"></div>
+            <div class="footer__icons">
+              <div class="footer__ico-money">
+                <ul>
+                  <li><img src="images/footer__yandex.svg" alt="ico yandex"></li>
+                  <li><img src="images/footer__qiwi.svg" alt="ico qiwi"></li>
+                  <li><img src="images/footer__webmoney.svg" alt="ico webmoney"></li>
+                  <li><img src="images/footer__mastercard.svg" alt="ico mastercard"></li>
+                  <li><img src="images/footer__visa.svg" alt="ico visa"></li>
+                  <li><img src="images/footer__mir.svg" alt="ico mir"></li>
+                </ul>
+              </div>
+              <div class="footer__border footer__border--small"></div>
+              <div class="footer__ico-soc">
+                <ul>
+                  <li><a class="social" href="#">
+                                                        <svg class="icon icon__vk ">
+                                                          <use xlink:href="images/svg/symbols.svg#icon__vk"></use>
+                                                        </svg></a>
+                  </li>
+                  <li><a class="social" href="#">
+                                                        <svg class="icon icon__facebook ">
+                                                          <use xlink:href="images/svg/symbols.svg#icon__facebook"></use>
+                                                        </svg></a>
+                  </li>
+                  <li><a class="social" href="#">
+                                                        <svg class="icon icon__classmates ">
+                                                          <use xlink:href="images/svg/symbols.svg#icon__classmates"></use>
+                                                        </svg></a>
+                  </li>
+                  <li><a class="social" href="#">
+                                                        <svg class="icon icon__tweet ">
+                                                          <use xlink:href="images/svg/symbols.svg#icon__tweet"></use>
+                                                        </svg></a>
+                  </li>
+                  <li><a class="social" href="#">
+                                                        <svg class="icon icon__youtube ">
+                                                          <use xlink:href="images/svg/symbols.svg#icon__youtube"></use>
+                                                        </svg></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer__bottom"><span>2018 | &copy; Lovimtut.ru | <a href="/">Карта сайта</a></span></div>
+          </footer>
+        </div>
+    <div class="menu-mobile">
+      <ul class="menu-mobile__list">
+        <li class="menu-mobile__item menu-mobile__item--white-b"><span class="menu-mobile__nav">
+                        <svg class="icon icon__cat ">
+                          <use xlink:href="images/svg/symbols.svg#icon__cat"></use>
+                        </svg>Каталог</span>
+          <div class="menu-mobile__in">
+            <ul class="menu-mobile__list">
+              <li class="menu-mobile__item menu-mobile__item--white-b"><span class="menu-mobile__close">
+                              <svg class="icon icon__arrow-left ">
+                                <use xlink:href="images/svg/symbols.svg#icon__arrow-left"></use>
+                              </svg></span></li>
+              <li class="menu-mobile__item menu-mobile__dropdown"> <a class="menu-mobile__nav" href="#">Удилища</a>
+                <div class="menu-mobile__in">
+                  <ul class="menu-mobile__list menu-mobile__cat">
+                    <li class="menu-mobile__item menu-mobile__item--white-b"><span class="menu-mobile__close">
+                                    <svg class="icon icon__arrow-left ">
+                                      <use xlink:href="images/svg/symbols.svg#icon__arrow-left"></use>
+                                    </svg></span></li>
+                    <li class="menu-mobile__item"> <a href="#"> 
+                                    <svg class="icon icon__spinning ">
+                                      <use xlink:href="images/svg/symbols.svg#icon__spinning"></use>
+                                    </svg>Спининговые</a></li>
+                    <li class="menu-mobile__item"> <a href="#"> 
+                                    <svg class="icon icon__casting ">
+                                      <use xlink:href="images/svg/symbols.svg#icon__casting"></use>
+                                    </svg>Кастинговые</a></li>
+                    <li class="menu-mobile__item menu-mobile__dropdown"><a class="menu-mobile__nav" href="#"> 
+                                    <svg class="icon icon__plug-in ">
+                                      <use xlink:href="images/svg/symbols.svg#icon__plug-in"></use>
+                                    </svg>Штекерные</a>
+                      <div class="menu-mobile__in">
+                        <ul class="menu-mobile__list">
+                          <li class="menu-mobile__item menu-mobile__item--white-b"><span class="menu-mobile__close">
+                                          <svg class="icon icon__arrow-left ">
+                                            <use xlink:href="images/svg/symbols.svg#icon__arrow-left"></use>
+                                          </svg></span></li>
+                          <li class="menu-mobile__item"> <a href="#">Штекерные 1</a></li>
+                          <li class="menu-mobile__item"> <a href="#">Штекерные 2</a></li>
+                          <li class="menu-mobile__item"> <a href="#">Штекерные 3</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="menu-mobile__item"> <a href="#"> 
+                                    <svg class="icon icon__float ">
+                                      <use xlink:href="images/svg/symbols.svg#icon__float"></use>
+                                    </svg>Поплавочные</a></li>
+                    <li class="menu-mobile__item"> <a href="#"> 
+                                    <svg class="icon icon__feeder ">
+                                      <use xlink:href="images/svg/symbols.svg#icon__feeder"></use>
+                                    </svg>Фидерные</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="menu-mobile__item"> <a href="#">Катушки</a></li>
+              <li class="menu-mobile__item"> <a href="#">Лески</a></li>
+              <li class="menu-mobile__item"> <a href="#">Приманки</a></li>
+              <li class="menu-mobile__item"> <a href="#">Крючки</a></li>
+              <li class="menu-mobile__item"> <a href="#">Грузы</a></li>
+              <li class="menu-mobile__item"> <a href="#">Хранение</a></li>
+              <li class="menu-mobile__item"> <a href="#">Аксессуары</a></li>
+              <li class="menu-mobile__item"> <a href="#">Одежда</a></li>
+              <li class="menu-mobile__item"> <a href="#">Обувь</a></li>
+              <li class="menu-mobile__item"> <a href="#">Лодки</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="menu-mobile__item"><a href="#">
+                        <svg class="icon icon__registration  ">
+                          <use xlink:href="images/svg/symbols.svg#icon__registration "></use>
+                        </svg>Вход/Регистрация</a></li>
+        <li class="menu-mobile__item menu-mobile__item--white-b"><a href="#">
+                        <svg class="icon icon__geo  ">
+                          <use xlink:href="images/svg/symbols.svg#icon__geo "></use>
+                        </svg>Город: Москва</a></li>
+        <li class="menu-mobile__item"><a href="#">О компании</a></li>
+        <li class="menu-mobile__item"><a href="#">Доставка и оплата</a></li>
+        <li class="menu-mobile__item"><a href="#">Помощь при выборе</a></li>
+        <li class="menu-mobile__item"><a href="#">Акции</a></li>
+        <li class="menu-mobile__item menu-mobile__item--white-b"><a href="#">Контакты</a></li>
+        <li class="menu-mobile__item"><a href="tel:88002522222">
+                        <svg class="icon icon__phone ">
+                          <use xlink:href="images/svg/symbols.svg#icon__phone"></use>
+                        </svg><b>8 800 252 22 2</b></a></li>
+        <li class="menu-mobile__item"><span>Пн - Пт | 10:00 - 20:00, Сб - Вс | Выходные</span></li>
+      </ul>
+      <div class="menu-mobile__level-2">
+        <p class="menu-mobile__nav" data-mob_level="menu-mobile__level-3">show level 3</p>
+        <p class="menu-mobile__nav" data-mob_level="menu-mobile__level-2">close level-2</p>
+        <ul class="menu-mobile__list">
+          <li class="menu-mobile__item menu-mobile__item--white-b"><span class="menu-mobile__nav" data-mob_level="menu-mobile__level-2">
+                            <svg class="icon icon__cat ">
+                              <use xlink:href="images/svg/symbols.svg#icon__cat"></use>
+                            </svg>Каталог</span></li>
+        </ul>
+      </div>
+      <div class="menu-mobile__level-3">
+        <p class="menu-mobile__nav" data-mob_level="menu-mobile__level-4">show level 4</p>
+        <p class="menu-mobile__nav" data-mob_level="menu-mobile__level-3">close level 3</p>
+        <p>level-3</p>
+        <p>level-3</p>
+        <p>level-3</p>
+        <p>level-3</p>
+        <p>level-3</p>
+        <p>level-3</p>
+        <p>level-3</p>
+        <p>level-3</p>
+        <p>level-3</p>
+        <p>level-3</p>
+        <p>level-3</p>
+        <p>level-3</p>
+        <p>level-3</p>
+        <p>level-3</p>
+        <p>level-3</p>
+        <p>level-3</p>
+        <p>level-3</p>
+        <p>level-3</p>
+        <p>level-3</p>
+        <p>level-3</p>
+        <p>level-3</p>
+        <p>level-3</p>
+        <p>level-3</p>
+        <p>22222</p>
+      </div>
+      <div class="menu-mobile__level-4">
+        <p class="menu-mobile__nav" data-mob_level="menu-mobile__filter">show filter</p>
+        <p class="menu-mobile__nav" data-mob_level="menu-mobile__level-4">close level 4</p>
+        <p>level-4</p>
+        <p>level-4</p>
+        <p>level-4</p>
+        <p>level-4</p>
+        <p>level-4</p>
+        <p>level-4</p>
+        <p>level-4</p>
+        <p>level-4</p>
+        <p>level-4</p>
+        <p>level-4</p>
+        <p>level-4</p>
+        <p>level-4</p>
+        <p>level-4</p>
+        <p>level-4</p>
+        <p>level-4</p>
+        <p>level-4</p>
+        <p>level-4</p>
+        <p>level-4</p>
+        <p>level-4</p>
+        <p>level-4</p>
+        <p>level-4</p>
+        <p>level-4</p>
+        <p>level-4</p>
+        <p>level-4</p>
+        <p>22222</p>
+      </div>
+      <div class="menu-mobile__filter">
+        <p class="menu-mobile__nav" data-mob_level="menu-mobile__filter">close filter</p>
+        <p>filter</p>
+        <p>filter</p>
+        <p>filter</p>
+        <p>filter</p>
+        <p>filter</p>
+        <p>filter</p>
+        <p>filter</p>
+        <p>filter</p>
+        <p>filter</p>
+        <p>filter</p>
+        <p>filter</p>
+        <p>filter</p>
+        <p>filter</p>
+        <p>filter</p>
+        <p>filter</p>
+        <p>filter</p>
+        <p>filter</p>
+        <p>filter</p>
+        <p>22222</p>
+      </div>
+    </div>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/svg4everybody.min.js"></script>
+    <script>$(document).ready(function () {	svg4everybody({});});</script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/baron.min.js"></script>
+    <script src="js/selectize.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
