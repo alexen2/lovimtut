@@ -1,0 +1,132 @@
+.slider-overview {
+	overflow: hidden;	
+	padding: 70px 20px 70px 20px;
+	background-color: #ffffff;
+	position: relative;
+
+	@media(min-width: 768px) {
+		padding: 80px 20px 70px 20px;
+	}
+}
+.slider-overview::before {
+	@media(min-width: 1720px) {
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		display: block;
+		content: "";
+		width: 200px;
+		background: linear-gradient(90deg, rgba(255, 255, 255, 1) 20%, rgba(255, 255, 255, 0.01) 100%);
+		z-index: 2;
+	}
+}
+.slider-overview::after {
+	@media(min-width: 1720px) {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		display: block;
+		content: "";
+		width: 200px;
+		background: linear-gradient(90deg, rgba(255, 255, 255, 0.01) 0%, rgba(255, 255, 255, 1) 70%);
+		z-index: 2;
+	}
+}
+.slider-overview h2 {
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+	margin: 0;
+	padding: 0 0 20px 0;
+
+	@media(min-width: 768px) {
+		font-size: 36px;
+		padding: 0 0 50px 0;
+	}
+	@media(min-width: 1200px) {
+		text-align: left;
+	}
+}
+.slider-overview__container {
+	max-width: 1180px;
+	margin: 0 auto;
+	overflow: hidden;
+
+	@media(min-width: 1720px) {
+		overflow: visible;
+	}
+}
+.slider-overview__slider {
+	position: relative;
+
+	@media(min-width: 768px) {
+		width: 690px;
+		margin: 0 auto;
+	}
+	@media(min-width: 1200px) {
+		width: 100%;
+		max-width: 100%;
+		overflow: visible;
+	}
+}
+.slider-overview__body {
+	@media(min-width: 768px) {
+		width: 546px;
+		margin: 0 auto;
+	}
+	@media(min-width: 1200px) {
+		width: 100%;
+		max-width: 1200px;
+	}
+}
+.slider-overview__list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.slider-overview__nav {
+	@media(min-width: 1200px) {
+		position: absolute;
+		top: -60px;
+		right: 0;
+		width: 105px;
+	}
+}
+.slider-overview__next,
+.slider-overview__prev {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	border: 1px solid transparent;
+	z-index: 2;
+	position: absolute;
+	top: 140px;
+	margin-top: -15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	background-color: rgba(255, 255, 255, 0.2);
+
+	@media(min-width: 768px) {		
+		border: 1px solid rgba(0, 0, 0, 0.2);
+		top: 165px;
+		width: 40px;
+		height: 40px;
+	}
+	@media(min-width: 1200px) {
+		top: 0;
+	}
+}
+.slider-overview__prev {
+	left: 0;
+}
+.slider-overview__next {
+	right: 0;
+}
+.slider-overview__nav .icon {
+	width: 7px;
+	height: 12px;
+}

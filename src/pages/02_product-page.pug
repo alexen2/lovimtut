@@ -1,20 +1,20 @@
 doctype html
 html(lang="ru")
 	include include/head.pug
-	+head('Index')
+	+head('Карточка товара')
 
 	body
 		include ../blocks/header-mobile/header-mobile.pug
 		include ../blocks/header/header.pug
 
-		include ../blocks/home-top/home-top.pug
+		div.container-1580
+			include ../blocks/breadcrumbs/breadcrumbs.pug
 
-		include ../blocks/buyers-choice/buyers-choice.pug
-
-		include ../blocks/slider-overview/slider-overview.pug
+		div.container-fluid-sm
+			include ../blocks/product-page/product-page.pug
 
 		include ../blocks/bottom/bottom.pug
-		+bottom({title: true, brands: true, action: true, subscribe: true})
+		+bottom({subscribe: true})
 
 		include ../blocks/menu-mobile/menu-mobile.pug
 

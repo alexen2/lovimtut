@@ -1,0 +1,33 @@
+section.slider-overview
+	div.slider-overview__container
+		h2 Обзор
+
+		div.slider-overview__slider
+			div.slider-overview__body
+				ul.slider-overview__list.swiper-wrapper
+					li.slider-overview__item.swiper-slide
+						include ../item-overview/item-overview.pug
+						+item-overview({})
+
+					li.slider-overview__item.swiper-slide
+						+item-overview({})
+
+					li.slider-overview__item.swiper-slide
+						+item-overview({})
+
+					li.slider-overview__item.swiper-slide
+						+item-overview({})
+
+					li.slider-overview__item.swiper-slide
+						+item-overview({})
+
+					li.slider-overview__item.swiper-slide
+						+item-overview({})
+
+			div.slider-overview__nav
+				div.slider-overview__next
+					include ../icon/icon.pug
+					+icon('icon__arrow-right')
+
+				div.slider-overview__prev
+					+icon('icon__arrow-left')
