@@ -50,6 +50,4 @@ $(document).ready(function() {
 			$(this).find('.menu__level-2-right').css('display', 'none');
 		}
 	});
-
-	//alert(screen.width);
 });
