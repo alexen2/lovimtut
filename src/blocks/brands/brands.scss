@@ -1,6 +1,10 @@
 .brands {
 	overflow-x: auto;
 	overflow-y: hidden;
+	-ms-overflow-style: none;
+}
+.brands::-webkit-scrollbar { 
+	width: 0; 
 }
 .brands ul {
 	display: flex;

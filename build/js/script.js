@@ -75,9 +75,12 @@ $(document).ready(function() {
 (function($){
   $(window).on("load",function(){    
     $(".item-choice").mCustomScrollbar({
-      axis:"x",
-      advanced:{
-        autoExpandHorizontalScroll:true
+      axis: "x",
+      advanced: {
+        autoExpandHorizontalScroll: true
+      },
+      mouseWheel: {
+      	enable: false
       }
     });    
   });
@@ -232,8 +235,8 @@ $(document).ready(function () {
       i = 0;
       
       showPage = function(i){
-          $(tabs).children("div").children("div").hide(500);
-          $(tabs).children("div").children("div").eq(i).show(500);
+          $(tabs).children("div").children("div").fadeOut("slow");
+          $(tabs).children("div").children("div").eq(i).fadeIn("slow");
           $(tabs).children("ul").children("li").removeClass("tabs__icon--active");
           $(tabs).children("ul").children("li").eq(i).addClass("tabs__icon--active");
       }

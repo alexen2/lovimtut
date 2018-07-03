@@ -50,6 +50,16 @@
 .menu__level-1 > .menu__item:last-child > a:before {
 	content: none;
 }
+.menu__item:hover a::after {
+	position: absolute;
+	top: 0;
+	left: -1px;
+	display: block;
+	content: "";
+	width: 1px;
+	height: 50px;
+	background-color: #363942;
+}
 .menu__level-2 {
 	position: absolute;
 	top: 50px;
@@ -172,7 +182,7 @@
 }
 .menu__level-3 ul {
 	height: 160px;
-	width: 170px;
+	width: 190px;
 	padding: 0 0 0 28px;
 	box-sizing: border-box;
 	margin: 0;

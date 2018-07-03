@@ -30,15 +30,23 @@
 .search-select__select {
 	border-left: 1px solid #D8D8D8;
 	box-sizing: border-box;
-	width: 137px;
-	padding-left: 9px;
+	width: 146px;
 	font-size: 14px;
 	padding-top: 10px;
 
 	@media(min-width: 1720px) {
-		padding-left: 19px;
-		width: 178px;
+		width: 197px;
 	}
+}
+.search-select .select {
+	width: 145px;
+
+	@media(min-width: 1720px) {
+		width: 196px;
+	}
+}
+.search-select .item {
+	padding-left: 9px;
 }
 .search-select .select.selectize-control.single .selectize-input:after {
 	content: "";

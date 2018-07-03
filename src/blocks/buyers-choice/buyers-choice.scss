@@ -1,7 +1,10 @@
-.buyers-choice__header {
+.buyers-choice {
+	@media(min-width: 992px) {
+		margin-top: -150px;
+	}
+}.buyers-choice__header {
 	padding-top: 10px;
 	padding-bottom: 38px;
-	background-color: #ffffff;
 }
 .buyers-choice__body {
 	background-color: #F0F4F7;

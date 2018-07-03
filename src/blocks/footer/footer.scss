@@ -15,7 +15,7 @@
 	flex-direction: column;
 	margin: 0 auto;
 
-	@media(min-width: 1260px) {
+	@media(min-width: 1200px) {
 		box-sizing: border-box;
 		flex-direction: row;
 		justify-content: space-between;
@@ -32,6 +32,10 @@
 		flex-direction: row;
 		padding: 0 40px;
 	}
+	@media(min-width: 1200px) {
+		padding: 0 34px 0 0;
+		flex: 0 0 900px;
+	}
 	@media(min-width: 1260px) {
 		flex: 0 0 934px;
 		padding: 0;
@@ -43,18 +47,21 @@
 	}
 }
 .footer__menu > div:nth-child(1) {
-	@media(min-width: 1260px) {
+	@media(min-width: 1200px) {
 		flex: 0 0 251px;		
 	}
 }
 .footer__menu > div:nth-child(2) {
-	@media(min-width: 1260px) {
+	@media(min-width: 1200px) {
 		flex: 0 0 319px;		
 	}
 }
 .footer__menu > div:last-child {
 	@media(min-width: 768px) {
 		flex: 0 0 270px;		
+	}
+	@media(min-width: 1200px) {
+		flex: 0 0 330px;		
 	}
 	@media(min-width: 1260px) {
 		flex: 0 0 364px;		
@@ -68,7 +75,7 @@
 		border-top: 1px solid rgba(207, 207, 207, 0.2);
 		text-align: center;
 	}
-	@media(min-width: 1260px) {
+	@media(min-width: 1200px) {
 		padding: 0;
 		text-align: left;
 		border-top: none;
@@ -83,7 +90,7 @@
 	margin-bottom: 7px;
 	padding-bottom: 6px;
 
-	@media(min-width: 1260px) {
+	@media(min-width: 1200px) {
 		padding-top: 10px;
 		padding-bottom: 20px;
 	}
@@ -94,7 +101,7 @@
 		flex-direction: row;
 		justify-content: center;		
 	}
-	@media(min-width: 1260px) {
+	@media(min-width: 1200px) {
 		flex-direction: column;
 	}
 }
@@ -102,7 +109,7 @@
 	@media(min-width: 768px) {
 		margin: 0 26px;
 	}
-	@media(min-width: 1260px) {
+	@media(min-width: 1200px) {
 		margin: 0 0 12px 0;
 	}
 }
@@ -125,7 +132,7 @@
 	flex-direction: column;
 	margin: 0 auto;
 
-	@media(min-width: 1260px) {
+	@media(min-width: 1200px) {
 		flex-direction: row;
 		justify-content: space-between;
 		max-width: 1260px;
@@ -142,7 +149,7 @@
 	@media(min-width: 768px) {
 		order: 2;
 	}
-	@media(min-width: 1260px) {
+	@media(min-width: 1200px) {
 		display: none;
 	}
 }
@@ -152,7 +159,7 @@
 	@media(min-width: 768px) {			
 		order: 3;
 	}
-	@media(min-width: 1260px) {
+	@media(min-width: 1200px) {
 		border-top: none;
 		order: 1;
 		width: 515px;
@@ -179,7 +186,7 @@
 	padding: 0 10px;
 	height: 44px;
 
-	@media(min-width: 1260px) {
+	@media(min-width: 1200px) {
 		padding: 0;
 	}
 }
@@ -193,7 +200,7 @@
 		order: 1;
 		border-top: none;
 	}
-	@media(min-width: 1260px) {
+	@media(min-width: 1200px) {
 		order: 2;
 		padding: 28px 0;
 		flex: 0 0 282px;
