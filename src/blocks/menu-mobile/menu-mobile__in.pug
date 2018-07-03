@@ -9,32 +9,465 @@ div.menu-mobile__in
 
 			include menu-mobile__in2.pug
 
-		li.menu-mobile__item 
-			a(href="#") Катушки
+		li.menu-mobile__item.menu-mobile__dropdown
+			a.menu-mobile__nav(href="#") Катушки
 
-		li.menu-mobile__item 
-			a(href="#") Лески
+			div.menu-mobile__in
+				ul.menu-mobile__list.menu-mobile__cat
+					li.menu-mobile__item.menu-mobile__item--white-b
+						span.menu-mobile__close
+							+icon('icon__arrow-left')
 
-		li.menu-mobile__item 
-			a(href="#") Приманки
+					li.menu-mobile__item 
+						a(href="#") 
+							+icon('icon__kat-enercion')
+							|Инерционные
 
-		li.menu-mobile__item 
-			a(href="#") Крючки
+					li.menu-mobile__item 
+						a(href="#") 
+							+icon('icon__kat-bezen')
+							|Безынерционные
 
-		li.menu-mobile__item 
-			a(href="#") Грузы
+					li.menu-mobile__item
+						a(href="#") 
+							+icon('icon__kat-multiplikat')
+							|Мультипликаторные
 
-		li.menu-mobile__item 
-			a(href="#") Хранение
+					li.menu-mobile__item 
+						a(href="#") 
+							+icon('icon__kat-shpuli')
+							|Шпули
 
-		li.menu-mobile__item 
-			a(href="#") Аксессуары
+		li.menu-mobile__item.menu-mobile__dropdown
+			a.menu-mobile__nav(href="#") Лески
 
-		li.menu-mobile__item 
-			a(href="#") Одежда
+			div.menu-mobile__in
+				ul.menu-mobile__list.menu-mobile__cat
+					li.menu-mobile__item.menu-mobile__item--white-b
+						span.menu-mobile__close
+							+icon('icon__arrow-left')
 
-		li.menu-mobile__item 
-			a(href="#") Обувь
+					li.menu-mobile__item 
+						a(href="#") 
+							+icon('icon__lesk-mofilnie')
+							|Флюрокарбон
 
-		li.menu-mobile__item 
-			a(href="#") Лодки
+					li.menu-mobile__item 
+						a(href="#") 
+							+icon('icon__lesk-shnurpl')
+							|Шнуры плетеные
+
+					li.menu-mobile__item
+						a(href="#") 
+							+icon('icon__lesk-mofilnie')
+							|Монофильные лески
+
+		li.menu-mobile__item.menu-mobile__dropdown
+			a.menu-mobile__nav(href="#") Приманки
+
+			div.menu-mobile__in
+				ul.menu-mobile__list.menu-mobile__cat
+					li.menu-mobile__item.menu-mobile__item--white-b
+						span.menu-mobile__close
+							+icon('icon__arrow-left')
+
+					li.menu-mobile__item 
+						a(href="#") 
+							+icon('icon__prin-paralonriba')
+							|Поролоновые рыбки
+
+					li.menu-mobile__item 
+						a(href="#") 
+							+icon('icon__prim-vobl')
+							|Воблеры
+
+					li.menu-mobile__item
+						a(href="#") 
+							+icon('icon__prim-vrachblesna')
+							|Вращающиеся блесны
+
+					li.menu-mobile__item
+						a(href="#") 
+							+icon('icon__prin-kolebalka')
+							|Колебающиеся блесны
+
+					li.menu-mobile__item
+						a(href="#") 
+							+icon('icon__prin-silikprim')
+							|Силиконовые приманки
+
+					li.menu-mobile__item
+						a(href="#") 
+							+icon('icon__prin-balansir')
+							|Балансиры
+
+					li.menu-mobile__item
+						a(href="#") 
+							+icon('icon__prim-mishi')
+							|Мыши
+
+					li.menu-mobile__item
+						a(href="#") 
+							+icon('icon__prin-spinerbeiti')
+							|Спиннербейты
+
+					li.menu-mobile__item
+						a(href="#") 
+							+icon('icon__prim-pilkeri')
+							|Пилькеры
+
+					li.menu-mobile__item
+						a(href="#") 
+							+icon('icon__prin-bokoplav')
+							|Бокоплавы
+
+					li.menu-mobile__item
+						a(href="#") 
+							+icon('icon__prim-mandula')
+							|Мандула
+
+		li.menu-mobile__item.menu-mobile__dropdown
+			a.menu-mobile__nav(href="#") Крючки
+
+			div.menu-mobile__in
+				ul.menu-mobile__list.menu-mobile__cat
+					li.menu-mobile__item.menu-mobile__item--white-b
+						span.menu-mobile__close
+							+icon('icon__arrow-left')
+
+					li.menu-mobile__item 
+						a(href="#") 
+							+icon('icon__kruk-odinarnie')
+							|Одинарные крючки
+
+					li.menu-mobile__item 
+						a(href="#") 
+							+icon('icon__kruk-dvoinoy')
+							|Двойные крючки
+
+					li.menu-mobile__item
+						a(href="#") 
+							+icon('icon__kruk-troinoi')
+							|Тройные крючки
+
+					li.menu-mobile__item
+						a(href="#") 
+							+icon('icon__kruk-offset')
+							|Оффсетные
+
+		li.menu-mobile__item.menu-mobile__dropdown
+			a.menu-mobile__nav(href="#") Грузы
+
+			div.menu-mobile__in
+				ul.menu-mobile__list.menu-mobile__cat
+					li.menu-mobile__item.menu-mobile__item--white-b
+						span.menu-mobile__close
+							+icon('icon__arrow-left')
+
+					li.menu-mobile__item 
+						a(href="#") 
+							+icon('icon__gruz-chebraz')
+							|Чебурашки разборные
+
+					li.menu-mobile__item 
+						a(href="#") 
+							+icon('icon__gruz-djiggol')
+							|Джиг-головки
+
+					li.menu-mobile__item
+						a(href="#") 
+							+icon('icon__gruz-dlyaosnasok')
+							|Для оснасток
+
+		li.menu-mobile__item.menu-mobile__dropdown
+			a.menu-mobile__nav(href="#") Хранение
+
+			div.menu-mobile__in
+				ul.menu-mobile__list.menu-mobile__cat
+					li.menu-mobile__item.menu-mobile__item--white-b
+						span.menu-mobile__close
+							+icon('icon__arrow-left')
+
+					li.menu-mobile__item 
+						a(href="#") 
+							+icon('icon__hranenie-koshelek')
+							|Кошельки под блесны
+
+					li.menu-mobile__item 
+						a(href="#") 
+							+icon('icon__hranenie-poaysnayasumka')
+							|Поясные сумки
+
+					li.menu-mobile__item
+						a(href="#") 
+							+icon('icon__hranenie-ryukzak')
+							|Рюкзаки
+
+					li.menu-mobile__item 
+						a(href="#") 
+							+icon('icon__hranenie-sumkaskorobkami')
+							|Сумки с коробками
+
+					li.menu-mobile__item 
+						a(href="#") 
+							+icon('icon__hranenie-termokonteiner')
+							|Термоконтейнеры
+
+					li.menu-mobile__item
+						a(href="#") 
+							+icon('icon__hranenie-chehli')
+							|Чехлы
+
+					li.menu-mobile__item 
+						a(href="#") 
+							+icon('icon__hranenie-yashik_i_chemodani')
+							|Ящики и чемоданы
+
+					li.menu-mobile__item 
+						a(href="#") 
+							+icon('icon__hranenie-sumki')
+							|Сумки
+
+					li.menu-mobile__item
+						a(href="#") 
+							+icon('icon__hranenie-korobdlyaprimanki')
+							|Коробки под приманки
+
+		li.menu-mobile__item.menu-mobile__dropdown
+			a.menu-mobile__nav(href="#") Аксессуары
+
+			div.menu-mobile__in
+				ul.menu-mobile__list.menu-mobile__cat
+					li.menu-mobile__item.menu-mobile__item--white-b
+						span.menu-mobile__close
+							+icon('icon__arrow-left')
+
+					li.menu-mobile__item 
+						a(href="#") 
+							+icon('icon__akses-lip-grip')
+							|Lip Grip
+
+					li.menu-mobile__item.menu-mobile__dropdown
+						a.menu-mobile__nav(href="#") 
+							+icon('icon__akses-povod_is_struni_stal')
+							|Поводки
+
+						div.menu-mobile__in
+							ul.menu-mobile__list
+								li.menu-mobile__item.menu-mobile__item--white-b
+									span.menu-mobile__close
+										+icon('icon__arrow-left')
+
+								li.menu-mobile__item 
+									a(href="#") Из струны
+
+								li.menu-mobile__item 
+									a(href="#") Стальные
+
+								li.menu-mobile__item 
+									a(href="#") Титановые
+
+								li.menu-mobile__item 
+									a(href="#") Флюрокарбоновые
+
+					li.menu-mobile__item 
+						a(href="#") 
+							+icon('icon__akses-instrument')
+							|Инструменты
+
+					li.menu-mobile__item.menu-mobile__dropdown
+						a.menu-mobile__nav(href="#") 
+							+icon('icon__akses-vertlyuzhki')
+							|Оснастка
+
+						div.menu-mobile__in
+							ul.menu-mobile__list
+								li.menu-mobile__item.menu-mobile__item--white-b
+									span.menu-mobile__close
+										+icon('icon__arrow-left')
+
+								li.menu-mobile__item 
+									a(href="#") Карабины
+
+								li.menu-mobile__item 
+									a(href="#") Кольца заводные
+
+								li.menu-mobile__item 
+									a(href="#") Вертлюжки
+
+					li.menu-mobile__item
+						a(href="#") 
+							+icon('icon__akses-vesi')
+							|Весы
+
+					li.menu-mobile__item 
+						a(href="#") 
+							+icon('icon__akses-podsak-i-kukan')
+							|Подсаки и куканы
+
+					li.menu-mobile__item 
+						a(href="#") 
+							+icon('icon__akses-remnispining')
+							|Ремни для спиннинга
+
+					li.menu-mobile__item
+						a(href="#") 
+							+icon('icon__akses-retriveri')
+							|Ретриверы
+
+					li.menu-mobile__item
+						a(href="#") 
+							+icon('icon__akses-smazki')
+							|Смазки
+
+					li.menu-mobile__item
+						a(href="#") 
+							+icon('icon__akses-stopori')
+							|Стопоры
+
+					li.menu-mobile__item
+						a(href="#") 
+							+icon('icon__akses-schetchikleski')
+							|Счетчики лески
+
+					li.menu-mobile__item
+						a(href="#") 
+							+icon('icon__akses-kreplenieholot')
+							|Крепления для эхолотов
+
+					li.menu-mobile__item
+						a(href="#") 
+							+icon('icon__akses-termos')
+							|Термосы
+
+					li.menu-mobile__item
+						a(href="#") 
+							+icon('icon__akses-fonaric')
+							|Фонари
+
+					li.menu-mobile__item
+						a(href="#") 
+							+icon('icon__akses-hukkiperi')
+							|Хукипперы
+
+		li.menu-mobile__item.menu-mobile__dropdown
+			a.menu-mobile__nav(href="#") Одежда
+
+			div.menu-mobile__in
+				ul.menu-mobile__list.menu-mobile__cat
+					li.menu-mobile__item.menu-mobile__item--white-b
+						span.menu-mobile__close
+							+icon('icon__arrow-left')
+
+					li.menu-mobile__item 
+						a(href="#") 
+							+icon('icon__odezhda-kostyum')
+							|Костюмы
+
+					li.menu-mobile__item
+						a(href="#") 
+							+icon('icon__odezhda-sviter')
+							|Толстовки/Свитера
+
+					li.menu-mobile__item 
+						a(href="#") 
+							+icon('icon__odezhda-kurtka')
+							|Куртки
+
+					li.menu-mobile__item
+						a(href="#") 
+							+icon('icon__odezhda-bryuki')
+							|Брюки
+
+					li.menu-mobile__item 
+						a(href="#") 
+							+icon('icon__odezhda-zhilet')
+							|Жилеты
+
+					li.menu-mobile__item
+						a(href="#") 
+							+icon('icon__odezhda-flisgorka')
+							|Флисовая одежда
+
+					li.menu-mobile__item 
+						a(href="#") 
+							+icon('icon__odezhda-termo')
+							|Термобелье
+
+					li.menu-mobile__item
+						a(href="#") 
+							+icon('icon__odezhda-shapka')
+							|Головные уборы
+
+					li.menu-mobile__item 
+						a(href="#") 
+							+icon('icon__odezhda-kurtkamembran')
+							|Куртки мембранные
+
+					li.menu-mobile__item
+						a(href="#") 
+							+icon('icon__odezhda-perchatki')
+							|Перчатки
+
+					li.menu-mobile__item 
+						a(href="#") 
+							+icon('icon__odezhda-noski')
+							|Носки
+
+					li.menu-mobile__item
+						a(href="#") 
+							+icon('icon__odezhda-futbolka')
+							|Рубашки футболки
+
+					li.menu-mobile__item 
+						a(href="#") 
+							+icon('icon__odezhda-sharf')
+							|Шарфы
+
+		li.menu-mobile__item.menu-mobile__dropdown
+			a.menu-mobile__nav(href="#") Обувь
+
+			div.menu-mobile__in
+				ul.menu-mobile__list.menu-mobile__cat
+					li.menu-mobile__item.menu-mobile__item--white-b
+						span.menu-mobile__close
+							+icon('icon__arrow-left')
+
+					li.menu-mobile__item 
+						a(href="#") 
+							+icon('icon__obuv-kombez')
+							|Вейдерсы
+
+					li.menu-mobile__item
+						a(href="#") 
+							+icon('icon__obuv-botimok')
+							|Ботинки
+
+					li.menu-mobile__item 
+						a(href="#") 
+							+icon('icon__obuv-sapog')
+							|Сапоги
+
+		li.menu-mobile__item.menu-mobile__dropdown
+			a.menu-mobile__nav(href="#") Лодки
+
+			div.menu-mobile__in
+				ul.menu-mobile__list.menu-mobile__cat
+					li.menu-mobile__item.menu-mobile__item--white-b
+						span.menu-mobile__close
+							+icon('icon__arrow-left')
+
+					li.menu-mobile__item 
+						a(href="#") 
+							+icon('icon__lodki-fishkayak')
+							|Фишкаяк
+
+					li.menu-mobile__item
+						a(href="#") 
+							+icon('icon__lodki-rezina')
+							|Резиновые
+
+					li.menu-mobile__item 
+						a(href="#") 
+							+icon('icon__lodki-metall')
+							|Аллюминевые

@@ -4,70 +4,509 @@ nav.menu
 			a(href="#") Удилища
 
 			div.menu__level-2
-				ul
-					li 
-						a(href="#") 
-							+icon('icon__spinning')
-							|Спининговые						
+				div.menu__level-2-left
+					+icon('icon__arrow-left')
+				div.menu__level-2-right
+					+icon('icon__arrow-right')
 
-					li 
-						a(href="#") 
-							+icon('icon__casting')
-							|Кастинговые
+				div.menu__level-2-body
+					ul
+						li 
+							a(href="#") 
+								+icon('icon__spinning')
+								|Спининговые						
 
-					li.menu__level-2__dropdown
-						a.hhh(href="#") 
-							+icon('icon__plug-in')
-							|Штекерные
+						li 
+							a(href="#") 
+								+icon('icon__casting')
+								|Кастинговые
 
-						div.menu__level-3
-							ul
-								li 
-									a(href="#") Штекерные 1
+						li
+							a.hhh(href="#") 
+								+icon('icon__plug-in')
+								|Штекерные
 
-								li 
-									a(href="#") Штекерные 2
+						li 
+							a(href="#") 
+								+icon('icon__float')
+								|Поплавочные
 
-								li 
-									a(href="#") Штекерные 3
-
-					li 
-						a(href="#") 
-							+icon('icon__float')
-							|Поплавочные
-
-					li 
-						a(href="#") 
-							+icon('icon__feeder')
-							|Фидерные
-
+						li 
+							a(href="#") 
+								+icon('icon__feeder')
+								|Фидерные
 
 		li.menu__item
 			a(href="#") Катушки
 
+			div.menu__level-2
+				div.menu__level-2-left
+					+icon('icon__arrow-left')
+				div.menu__level-2-right
+					+icon('icon__arrow-right')
+
+				div.menu__level-2-body
+					ul
+						li 
+							a(href="#") 
+								+icon('icon__kat-enercion')
+								|Инерционные						
+
+						li 
+							a(href="#") 
+								+icon('icon__kat-bezen')
+								|Безынерционные
+
+						li 
+							a(href="#") 
+								+icon('icon__kat-multiplikat')
+								|Мультипликаторные						
+
+						li 
+							a(href="#") 
+								+icon('icon__kat-shpuli')
+								|Шпули
+
 		li.menu__item
 			a(href="#") Лески
+
+			div.menu__level-2
+				div.menu__level-2-left
+					+icon('icon__arrow-left')
+				div.menu__level-2-right
+					+icon('icon__arrow-right')
+
+				div.menu__level-2-body
+					ul
+						li 
+							a(href="#") 
+								+icon('icon__lesk-mofilnie')
+								|Флюрокарбон						
+
+						li 
+							a(href="#") 
+								+icon('icon__lesk-shnurpl')
+								|Шнуры плетеные
+
+						li 
+							a(href="#") 
+								+icon('icon__lesk-mofilnie')
+								|Монофильные лески	
 
 		li.menu__item
 			a(href="#") Приманки
 
+			div.menu__level-2
+				div.menu__level-2-left
+					+icon('icon__arrow-left')
+				div.menu__level-2-right
+					+icon('icon__arrow-right')
+
+				div.menu__level-2-body
+					ul
+						li 
+							a(href="#") 
+								+icon('icon__prin-paralonriba')
+								|Поролоновые рыбки
+
+						li 
+							a(href="#") 
+								+icon('icon__prim-vobl')
+								|Воблеры
+
+						li 
+							a(href="#") 
+								+icon('icon__prim-vrachblesna')
+								|Вращающиеся блесны
+
+						li 
+							a(href="#") 
+								+icon('icon__prin-kolebalka')
+								|Колебающиеся блесны
+
+						li 
+							a(href="#") 
+								+icon('icon__prin-silikprim')
+								|Силиконовые приманки
+
+						li 
+							a(href="#") 
+								+icon('icon__prin-balansir')
+								|Балансиры
+
+						li 
+							a(href="#") 
+								+icon('icon__prim-mishi')
+								|Мыши
+
+						li 
+							a(href="#") 
+								+icon('icon__prin-spinerbeiti')
+								|Спиннербейты
+
+						li 
+							a(href="#") 
+								+icon('icon__prim-pilkeri')
+								|Пилькеры
+
+						li 
+							a(href="#") 
+								+icon('icon__prin-bokoplav')
+								|Бокоплавы
+
+						li 
+							a(href="#") 
+								+icon('icon__prim-mandula')
+								|Мандула
+
 		li.menu__item
 			a(href="#") Крючки
+
+			div.menu__level-2
+				div.menu__level-2-left
+					+icon('icon__arrow-left')
+				div.menu__level-2-right
+					+icon('icon__arrow-right')
+
+				div.menu__level-2-body
+					ul
+						li 
+							a(href="#") 
+								+icon('icon__kruk-odinarnie')
+								|Одинарные крючки
+
+						li 
+							a(href="#") 
+								+icon('icon__kruk-dvoinoy')
+								|Двойные крючки
+
+						li 
+							a(href="#") 
+								+icon('icon__kruk-troinoi')
+								|Тройные крючки
+
+						li 
+							a(href="#") 
+								+icon('icon__kruk-offset')
+								|Оффсетные
 
 		li.menu__item
 			a(href="#") Грузы
 
+			div.menu__level-2
+				div.menu__level-2-left
+					+icon('icon__arrow-left')
+				div.menu__level-2-right
+					+icon('icon__arrow-right')
+
+				div.menu__level-2-body
+					ul
+						li 
+							a(href="#") 
+								+icon('icon__gruz-chebraz')
+								|Чебурашки разборные
+
+						li 
+							a(href="#") 
+								+icon('icon__gruz-djiggol')
+								|Джиг-головки
+
+						li 
+							a(href="#") 
+								+icon('icon__gruz-dlyaosnasok')
+								|Для оснасток
+
 		li.menu__item
 			a(href="#") Хранение
+
+			div.menu__level-2
+				div.menu__level-2-left
+					+icon('icon__arrow-left')
+				div.menu__level-2-right
+					+icon('icon__arrow-right')
+
+				div.menu__level-2-body
+					ul
+						li 
+							a(href="#") 
+								+icon('icon__hranenie-koshelek')
+								|Кошельки под блесны
+
+						li 
+							a(href="#") 
+								+icon('icon__hranenie-poaysnayasumka')
+								|Поясные сумки
+
+						li 
+							a(href="#") 
+								+icon('icon__hranenie-ryukzak')
+								|Рюкзаки
+
+						li 
+							a(href="#") 
+								+icon('icon__hranenie-sumkaskorobkami')
+								|Сумки с коробками
+
+						li 
+							a(href="#") 
+								+icon('icon__hranenie-termokonteiner')
+								|Термоконтейнеры
+
+						li 
+							a(href="#") 
+								+icon('icon__hranenie-chehli')
+								|Чехлы
+
+						li 
+							a(href="#") 
+								+icon('icon__hranenie-yashik_i_chemodani')
+								|Ящики и чемоданы
+
+						li 
+							a(href="#") 
+								+icon('icon__hranenie-sumki')
+								|Сумки
+
+						li 
+							a(href="#") 
+								+icon('icon__hranenie-korobdlyaprimanki')
+								|Коробки под приманки
 
 		li.menu__item
 			a(href="#") Аксессуары
 
+			div.menu__level-2
+				div.menu__level-2-left
+					+icon('icon__arrow-left')
+				div.menu__level-2-right
+					+icon('icon__arrow-right')
+
+				div.menu__level-2-body
+					ul
+						li 
+							a(href="#") 
+								+icon('icon__akses-lip-grip')
+								|Lip Grip
+
+						li.menu__level-2__dropdown
+							a(href="#") 
+								+icon('icon__akses-povod_is_struni_stal')
+								|Поводки
+
+							div.menu__level-3
+								ul
+									li 
+										a(href="#") Из струны
+
+									li 
+										a(href="#") Стальные
+
+									li 
+										a(href="#") Титановые
+
+									li 
+										a(href="#") Флюрокарбоновые						
+
+						li 
+							a(href="#") 
+								+icon('icon__akses-instrument')
+								|Инструменты
+
+						li.menu__level-2__dropdown
+							a(href="#") 
+								+icon('icon__akses-vertlyuzhki')
+								|Оснастка
+
+							div.menu__level-3
+								ul
+									li 
+										a(href="#") Карабины
+
+									li 
+										a(href="#") Кольца заводные
+
+									li 
+										a(href="#") Вертлюжки	
+
+						li 
+							a(href="#") 
+								+icon('icon__akses-vesi')
+								|Весы					
+
+						li 
+							a(href="#") 
+								+icon('icon__akses-podsak-i-kukan')
+								|Подсаки и куканы
+
+						li 
+							a(href="#") 
+								+icon('icon__akses-remnispining')
+								|Ремни для спиннинга
+
+						li 
+							a(href="#") 
+								+icon('icon__akses-retriveri')
+								|Ретриверы
+
+						li 
+							a(href="#") 
+								+icon('icon__akses-smazki')
+								|Смазки
+
+						li 
+							a(href="#") 
+								+icon('icon__akses-stopori')
+								|Стопоры
+
+						li 
+							a(href="#") 
+								+icon('icon__akses-schetchikleski')
+								|Счетчики лески
+
+						li 
+							a(href="#") 
+								+icon('icon__akses-kreplenieholot')
+								|Крепления для эхолотов
+
+						li 
+							a(href="#") 
+								+icon('icon__akses-termos')
+								|Термосы
+
+						li 
+							a(href="#") 
+								+icon('icon__akses-fonaric')
+								|Фонари
+
+						li 
+							a(href="#") 
+								+icon('icon__akses-hukkiperi')
+								|Хукипперы
+
 		li.menu__item
 			a(href="#") Одежда
+
+			div.menu__level-2
+				div.menu__level-2-left
+					+icon('icon__arrow-left')
+				div.menu__level-2-right
+					+icon('icon__arrow-right')
+
+				div.menu__level-2-body
+					ul
+						li 
+							a(href="#") 
+								+icon('icon__odezhda-kostyum')
+								|Костюмы
+
+						li 
+							a(href="#") 
+								+icon('icon__odezhda-sviter')
+								|Толстовки/Свитера
+
+						li 
+							a(href="#") 
+								+icon('icon__odezhda-kurtka')
+								|Куртки
+
+						li 
+							a(href="#") 
+								+icon('icon__odezhda-bryuki')
+								|Брюки
+
+						li 
+							a(href="#") 
+								+icon('icon__odezhda-zhilet')
+								|Жилеты
+
+						li 
+							a(href="#") 
+								+icon('icon__odezhda-flisgorka')
+								|Флисовая одежда
+
+						li 
+							a(href="#") 
+								+icon('icon__odezhda-termo')
+								|Термобелье
+
+						li 
+							a(href="#") 
+								+icon('icon__odezhda-shapka')
+								|Головные уборы
+
+						li 
+							a(href="#") 
+								+icon('icon__odezhda-kurtkamembran')
+								|Куртки мембранные
+
+						li 
+							a(href="#") 
+								+icon('icon__odezhda-perchatki')
+								|Перчатки
+
+						li 
+							a(href="#") 
+								+icon('icon__odezhda-noski')
+								|Носки
+
+						li 
+							a(href="#") 
+								+icon('icon__odezhda-futbolka')
+								|Рубашки футболки
+
+						li 
+							a(href="#") 
+								+icon('icon__odezhda-sharf')
+								|Шарфы
 
 		li.menu__item
 			a(href="#") Обувь
 
+			div.menu__level-2
+				div.menu__level-2-left
+					+icon('icon__arrow-left')
+				div.menu__level-2-right
+					+icon('icon__arrow-right')
+
+				div.menu__level-2-body
+					ul
+						li 
+							a(href="#") 
+								+icon('icon__obuv-kombez')
+								|Вейдерсы
+
+						li 
+							a(href="#") 
+								+icon('icon__obuv-botimok')
+								|Ботинки
+
+						li 
+							a(href="#") 
+								+icon('icon__obuv-sapog')
+								|Сапоги
+
 		li.menu__item
 			a(href="#") Лодки
+
+			div.menu__level-2
+				div.menu__level-2-left
+					+icon('icon__arrow-left')
+				div.menu__level-2-right
+					+icon('icon__arrow-right')
+
+				div.menu__level-2-body
+					ul
+						li 
+							a(href="#") 
+								+icon('icon__lodki-fishkayak')
+								|Фишкаяк
+
+						li 
+							a(href="#") 
+								+icon('icon__lodki-rezina')
+								|Резиновые
+
+						li 
+							a(href="#") 
+								+icon('icon__lodki-metall')
+								|Аллюминевые

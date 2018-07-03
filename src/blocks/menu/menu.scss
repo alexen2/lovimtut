@@ -47,7 +47,7 @@
 	height: 24px;
 	background-color: rgba(0, 0, 0, 0.2);
 }
-.menu__level-1 > .menu__item > a:last-child:before {
+.menu__level-1 > .menu__item:last-child > a:before {
 	content: none;
 }
 .menu__level-2 {
@@ -73,41 +73,94 @@
 .menu__level-1 > .menu__item:hover .menu__level-2 {
 	height: 160px;
 }
-.menu__level-2 > ul {
+.menu__level-2-left,
+.menu__level-2-right {
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	position: absolute;
+	top: 60px;
+	z-index: 2;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.menu__level-2-left:hover,
+.menu__level-2-right:hover {
+	background: rgba(255, 255, 255, 0.2);
+}
+.menu__level-2-left .icon,
+.menu__level-2-right .icon {
+	fill: #ffffff;
+	width: 7px;
+	height: 12px;
+}
+.menu__level-2-left {	
+	left: 935px;	
+
+	@media(min-width: 1600px) {
+		left: 1460px;
+	}
+}
+.menu__level-2-right {
+	left: 995px;
+
+	@media(min-width: 1600px) {
+		left: 1520px;
+	}
+}
+.menu__level-2-body {
+	position: relative;
+	width: 850px;
+	overflow: hidden;
+
+	@media(min-width: 1600px) {
+		width: 1360px;
+	}
+}
+.menu__level-2-body > ul {
+	position: relative;
+	top: 0;
+	left: 0;
 	list-style: none;
 	padding: 0;
 	margin: 0;
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
+	transition: all 0.6s;
 }
-.menu__level-2 > ul > li {
+.menu__level-2-body > ul > li {
 	text-align: center;
 	display: flex;
 	flex-direction: row;
 }
-.menu__level-2 > ul > li:hover {
+.menu__level-2-body > ul > li:hover {
 	background-color: rgba(216, 216, 216, 0.1);
 }
-.menu__level-2 a {
+.menu__level-2-body a {
 	font-size: 14px;
 	color: #ffffff;
 	text-decoration: none;
 }
-.menu__level-2 > ul > li > a {
+.menu__level-2-body > ul > li > a {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	height: 160px;
 	width: 170px;	
+	padding: 0 7px;
+	box-sizing: border-box;
 }
-.menu__level-2 a:hover {
+.menu__level-2-body a:hover {
 	color: #1EACF6;	
 }
-.menu__level-2 a:hover svg {
+.menu__level-2-body a:hover svg {
 	fill: #1EACF6;
 }
-.menu__level-2 svg {
+.menu__level-2-body svg {
 	fill: #fff;
 	width: 57px;
 	height: 50px;
