@@ -7,13 +7,14 @@ html(lang="ru")
 		include ../blocks/header-mobile/header-mobile.pug
 		include ../blocks/header/header.pug
 
-		div.container-1580
-			include ../blocks/breadcrumbs/breadcrumbs.pug
-			
-			h1 Отзывы о интернет-магазине "ЛовимТут"
+		div.content
+			div.container-1580
+				include ../blocks/breadcrumbs/breadcrumbs.pug
+				
+				h1 Отзывы о интернет-магазине "ЛовимТут"
 
-		div.container-fluid-sm
-			include ../blocks/testimonials/testimonials.pug
+			div.container-fluid-sm
+				include ../blocks/testimonials/testimonials.pug
 
 		include ../blocks/bottom/bottom.pug
 		+bottom({subscribe: true})

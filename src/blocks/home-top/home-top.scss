@@ -1,6 +1,6 @@
 .home-top {
-	background-image: url(../images/home-top__small.jpg);
-	background-position: bottom left;
+	background-image: url(../images/home-top.jpg);
+	background-position: top left;
 	background-repeat: no-repeat;
 	background-size: cover;
 	padding-bottom: 52px;
@@ -8,8 +8,7 @@
 	@media(min-width: 768px) {
 		padding-bottom: 92px;
 	}
-	@media(min-width: 992px) {
-		background-image: url(../images/home-top.jpg);
+	@media(min-width: 992px) {		
 		padding-bottom: 250px;
 	}
 }

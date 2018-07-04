@@ -32,7 +32,6 @@
 	box-sizing: border-box;
 	width: 146px;
 	font-size: 14px;
-	padding-top: 10px;
 
 	@media(min-width: 1720px) {
 		width: 197px;
@@ -45,8 +44,16 @@
 		width: 196px;
 	}
 }
+.search-select__select input {
+	display: none !important;
+}
 .search-select .item {
 	padding-left: 9px;
+	z-index: 999;
+}
+.search-select .selectize-control {
+	height: 20px;
+	padding-top: 10px;
 }
 .search-select .select.selectize-control.single .selectize-input:after {
 	content: "";
@@ -61,6 +68,9 @@
 .search-select .select.selectize-control.single .focus.selectize-input:after {
 	top: 12px;
 	transform: rotate(-135deg);
+}
+.search-select .selectize-input {
+	padding-bottom: 8px;
 }
 .search-select .btn{
 	width: 38px;
