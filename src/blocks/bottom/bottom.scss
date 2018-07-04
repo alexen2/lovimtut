@@ -1,11 +1,12 @@
 .bottom {
 	background-color: #f0f4f7;
-	background-image: url(../images/bottom.jpg);
+	background-image: url(../images/bottom--small.jpg);
 	background-position: bottom center;
 	background-repeat: no-repeat;
 	padding-top: 55px;
 
 	@media(min-width: 768px) {
+		background-image: url(../images/bottom.jpg);
 		padding-top: 80px;
 	}
 	@media(min-width: 1200px) {
