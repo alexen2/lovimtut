@@ -4,19 +4,22 @@
 	text-align: center;
 	list-style: none;
 }
-.pagination__item {
+.pagination__item {	
 	width: 30px;
 	line-height: 30px;
 	margin: 0 2px;
 	font-size: 14px;
-	font-weight: 400;
-	color: #4D4D4D;
+	font-weight: 400;	
 	display: inline-block;
-	text-decoration: none;
 	border: 1px solid transparent;
 }
 .pagination__item a {
+	display: inline-block;
 	text-decoration: none;
+	color: #4D4D4D;	
+	text-decoration: none;
+	line-height: 28px;
+	width: 28px;
 }
 .pagination__left {
 	margin-right: 22px;
@@ -44,5 +47,9 @@
 	background: #ffffff
 }
 .pagination__item--active:hover {
-	border: 1px solid #d4d8da;
+	border: 1px solid #ffffff;
+}
+.pagination .icon {
+	width: 5px;
+	height: 8px;
 }

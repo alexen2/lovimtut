@@ -9,7 +9,12 @@ html(lang="ru")
 
 		div.content
 			div.container-1580
-				include ../blocks/breadcrumbs/breadcrumbs.pug
+				div.breadcrumbs
+					ul.breadcrumbs__list
+						li.breadcrumbs__item
+							a.breadcrumbs__link(href="#") Главная
+						li.breadcrumbs__item.breadcrumbs__item--active
+							span Контакты
 				
 				h1 Контакты
 
