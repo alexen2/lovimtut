@@ -20,7 +20,7 @@ div.cat
 
 	div.cat__body
 		div.cat__sidebar
-			p jhgfjhfgjhg
+			include ../cat-filter/cat-filter.pug
 
 		div.cat__main
 			div.cat__filter
@@ -36,6 +36,24 @@ div.cat
 
 				li.cat__item
 					+product({new: 'Новинка', img: 'product__img-02.jpg', title: 'Воблер SALMO Jack', price: '550'})
+
+				li.cat__item
+					+product({con2: true, new: 'Новинка', spec: 'Спецпредложение', img: 'product__img-01.jpg', title: 'Удилище нахлыстовое SALMO Diamond SKY 34563456', price: '1 825', not: 'Нет в наличии'})
+
+				li.cat__item
+					+product({new: 'Новинка', img: 'product__img-02.jpg', title: 'Воблер SALMO Jack', price: '550'})
+
+				li.cat__item
+					+product({con2: true, new: 'Новинка', spec: 'Спецпредложение', img: 'product__img-01.jpg', title: 'Удилище нахлыстовое SALMO Diamond SKY 34563456', price: '1 825', not: 'Нет в наличии'})
+
+				li.cat__item
+					+product({con2: true, new: 'Новинка', spec: 'Спецпредложение', img: 'product__img-01.jpg', title: 'Удилище нахлыстовое SALMO Diamond SKY 34563456', price: '1 825', not: 'Нет в наличии'})
+
+				li.cat__item
+					+product({new: 'Новинка', img: 'product__img-02.jpg', title: 'Воблер SALMO Jack', price: '550'})
+
+				li.cat__item
+					+product({con2: true, new: 'Новинка', spec: 'Спецпредложение', img: 'product__img-01.jpg', title: 'Удилище нахлыстовое SALMO Diamond SKY 34563456', price: '1 825', not: 'Нет в наличии'})
 
 				li.cat__item
 					+product({con2: true, new: 'Новинка', spec: 'Спецпредложение', img: 'product__img-01.jpg', title: 'Удилище нахлыстовое SALMO Diamond SKY 34563456', price: '1 825', not: 'Нет в наличии'})
