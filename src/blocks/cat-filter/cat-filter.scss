@@ -6,15 +6,109 @@
 	padding-top: 30px;
 	padding-bottom: 27px;
 }
+.cat-filter__block:last-child {
+	border-bottom: none;
+}
 .cat-filter__inputs {
 	display: flex;
 	justify-content: space-between;
+	padding-bottom: 18px;
 }
 .cat-filter__inputs input {
 	width: 80px;
 	text-align: center;
+	border: 1px solid #D9D9D9;
+	box-sizing: border-box;
+	border-radius: 5px;
+	font-size: 14px;
+	color: #4D4D4D;
+	font-family: $font-main;
+	padding: 10px 0;
 
 	@media(min-width: 1260px) {
 		width: 110px;
 	}
+}
+.cat-filter .ui-slider-horizontal {
+	height: 4px;
+	background: #D9D9D9;
+	box-sizing: border-box;
+	border-radius: 2px;
+	border: none;
+}
+.cat-filter .ui-widget-header {
+	height: 4px;
+	background-color: #1EACF6;
+}
+.cat-filter .ui-slider .ui-slider-handle {
+	border: 1px solid #F5F5F5;
+	box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.12);
+	background-color: #ffffff;
+	width: 18px;
+	height: 18px;
+	border-radius: 50%;
+	top: -8px;
+	outline: none;
+}
+.cat-filter .ui-slider .ui-slider-handle::before {
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	display: block;
+	content: "";
+	border: 1px solid #1EACF6;
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+}
+.cat-filter__header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding-bottom: 24px;
+}
+.cat-filter__header span {
+	font-weight: 500;
+	font-size: 16px;
+	color: #363942;
+}
+.cat-filter__header a {
+	text-decoration: underline;
+	font-size: 14px;
+	color: #1EACF6;
+}
+.cat-filter__header a:hover {
+	text-decoration: none;
+}
+.cat-filter .checkbox {
+	width: 100%;
+}
+.cat-filter__scroll {
+	position: relative;
+	height: 280px;
+	overflow: hidden;
+}
+.cat-filter__scroll::before {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	content: "";
+	display: block;
+	height: 20px;
+	z-index: 2;
+	background: linear-gradient(180deg, rgba(240,244,247,0.1) 0%, #f0f4f7 50%);
+}
+.cat-filter .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+	background-color: #1EACF6;
+}
+.cat-filter .mCSB_scrollTools .mCSB_draggerRail {
+	background-color: #D9D9D9;
+}
+.cat-filter .mCustomScrollBox {
+	padding-bottom: 0;
+}
+.cat-filter__footer {
+	padding-top: 40px;
 }

@@ -1,10 +1,4 @@
 $(document).ready(function() {	
-/*	$('.footer__ico-money img').hover(function() {
-		$(this).attr('src', "images/" + $(this).attr('data-color') + "-color.svg");
-	}, function() {
-		$(this).attr('src', "images/" + $(this).attr('data-color') + ".svg");
-	});*/
-
 	jQuery("#slider-1").slider({
 		min: 0,
 		max: 35000,
@@ -50,4 +44,10 @@ $(document).ready(function() {
 			jQuery("input#maxCost-3").val(jQuery("#slider-3").slider("values",1));
 	  }
 	});
+});
+
+$(window).on("load",function(){    
+	$(".cat-filter__scroll").mCustomScrollbar({
+	  axis: "y"
+	});    
 });

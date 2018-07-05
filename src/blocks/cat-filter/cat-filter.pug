@@ -22,3 +22,46 @@ div.cat-filter
 				input(type="text", id="maxCost-3", value="5000")
 
 			div(id="slider-3")
+
+	div.cat-filter__block
+		include ../checkbox/checkbox.pug
+		+checkbox('Только в наличии')
+		+checkbox('Только акции')
+
+	div.cat-filter__block
+		div.cat-filter__header
+			span Бренды
+
+			a(href="#") Сбросить
+
+		div.cat-filter__scroll
+			+checkbox('Shimano')
+			+checkbox('G.Loomis')
+			+checkbox('Lagoon')
+			+checkbox('Trolling Master')
+			+checkbox('Maximus')
+			+checkbox('Pontoon21')
+			+checkbox('Siweida')
+			+checkbox('Aqua')
+			+checkbox('L&F')
+			+checkbox('Tom')
+			+checkbox('Maximus')
+			+checkbox('Pontoon21')
+			+checkbox('Siweida')
+			+checkbox('Aqua')
+			+checkbox('L&F')
+			+checkbox('Tom')
+			+checkbox('Shimano')
+			+checkbox('G.Loomis')
+			+checkbox('Lagoon')
+			+checkbox('Trolling Master')
+			+checkbox('Maximus')
+			+checkbox('Pontoon21')
+			+checkbox('Siweida')
+			+checkbox('Aqua')
+			+checkbox('L&F')
+			+checkbox('Tom')
+
+		div.cat-filter__footer
+			include ../btn/btn.pug
+			+btn({text: 'Применить'})(class="btn--block")

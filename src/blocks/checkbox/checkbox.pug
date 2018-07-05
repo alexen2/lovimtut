@@ -1,0 +1,6 @@
+mixin checkbox(text)
+	div.checkbox(class!=attributes.class)
+		label
+			input(type="checkbox" hidden) 
+			span
+			!=text
