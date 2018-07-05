@@ -1,6 +1,8 @@
 # lovimtut
 HTML template
 
+![Иллюстрация к проекту](https://github.com/alexen2/lovimtut/raw/master/src/pages/mockup.jpg)
+
 ## Demo
 
 ### Home
