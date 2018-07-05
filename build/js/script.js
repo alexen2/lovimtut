@@ -1,3 +1,10 @@
+$(function() {
+	$('#cat-sort').selectize({
+  	create: true,
+  	sortField: 'text'
+	});
+});
+
 $(document).ready(function() {	
 	$('.footer__ico-money img').hover(function() {
 		$(this).attr('src', "images/" + $(this).attr('data-color') + "-color.svg");

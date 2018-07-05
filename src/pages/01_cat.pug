@@ -1,0 +1,24 @@
+doctype html
+html(lang="ru")
+	include include/head.pug
+	+head('Каталог')
+
+	body
+		include ../blocks/header-mobile/header-mobile.pug
+		include ../blocks/header/header.pug
+		
+		div.content
+			div.container-1580
+				div.breadcrumbs
+					ul.breadcrumbs__list
+						li.breadcrumbs__item
+							a.breadcrumbs__link(href="#") Главная
+						li.breadcrumbs__item.breadcrumbs__item--active
+							span Удилища
+		
+			include ../blocks/cat/cat.pug
+
+		include ../blocks/bottom/bottom.pug
+		+bottom({subscribe: true})
+
+		include include/script.pug

@@ -1,0 +1,1085 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Каталог</title>
+      <link href="css/jquery.mCustomScrollbar.min.css" rel="stylesheet">
+      <link href="css/style.css" rel="stylesheet"><!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+    </head>
+  <body>
+    <header class="header-mobile">
+      <div class="container">
+        <div class="header-mobile__body">
+          <div class="header-mobile__left">
+                        <button class="hamburger hamburger--spin" type="button" id="hamburger"><span class="hamburger-box"><span class="hamburger-inner"></span></span></button><a class="logo" href="/"><img src="images/logo.svg" alt="lovimtut.ru"></a>
+          </div>
+          <div class="header-mobile__right"><a class="header-mobile__ico-search" href="#">
+                          <svg class="icon icon__search-big ">
+                            <use xlink:href="images/svg/symbols.svg#icon__search-big"></use>
+                          </svg></a><a href="#">
+                          <svg class="icon icon__star ">
+                            <use xlink:href="images/svg/symbols.svg#icon__star"></use>
+                          </svg></a><a href="#">
+                          <svg class="icon icon__cart ">
+                            <use xlink:href="images/svg/symbols.svg#icon__cart"></use>
+                          </svg></a>
+          </div>
+        </div>
+      </div>
+      <div class="header-mobile__search">
+        <div class="container">
+          <div class="search">
+            <form class="search__form" action="/" method="post">
+              <input type="text" placeholder="Поиск по сайту">
+                            <button class="btn" type="submit" role="button"><span class="icon__search">
+                                              <svg class="icon icon__search ">
+                                                <use xlink:href="images/svg/symbols.svg#icon__search"></use>
+                                              </svg></span>
+                            </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+    <header class="header">
+      <div class="top">
+        <div class="container">
+          <div class="top__row">
+            <div class="top__menu">
+              <ul>
+                <li><a href="#">О компании</a></li>
+                <li><a href="#">Доставка и оплата</a></li>
+                <li><a href="#">Помощь при выборе</a></li>
+                <li><a href="#">Акции</a></li>
+                <li><a href="#">Контакты</a></li>
+              </ul>
+            </div>
+            <div class="top__info"><span>Режим работы:</span><span>Пн - Пт</span><span>10:00 - 20:00, Сб - Вс</span><span>Выходные</span></div>
+            <div class="top__icons"><a href="#"><i>
+                                <svg class="icon icon__registration ">
+                                  <use xlink:href="images/svg/symbols.svg#icon__registration"></use>
+                                </svg></i><span>Регистрация</span></a><a href="#"><i>
+                                <svg class="icon icon__login ">
+                                  <use xlink:href="images/svg/symbols.svg#icon__login"></use>
+                                </svg></i><span>Вход</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header__body">
+        <div class="container">
+          <div class="header__body--in">
+            <div class="header__logo"><a class="logo" href="/"><img src="images/logo.svg" alt="lovimtut.ru"></a></div>
+            <div class="header__search">
+              <div class="search-select">
+                <form class="search-select__form" action="/" method="post">
+                  <input type="text" placeholder="Поиск по сайту">
+                  <div class="search-select__select">
+                                        <select class="select" id="search_cat" data-placeholder="Весь каталог" name="search_cat">
+                                          <option value=""></option>
+                                          <option value="1">text 1
+                                          </option>
+                                          <option value="2">text 2
+                                          </option>
+                                          <option value="3">text 3
+                                          </option>
+                                          <option selected value="Весь каталог">Весь каталог</option>
+                                        </select>
+                  </div>
+                                    <button class="btn" type="submit" role="button"><span class="icon__search">
+                                                          <svg class="icon icon__search ">
+                                                            <use xlink:href="images/svg/symbols.svg#icon__search"></use>
+                                                          </svg></span>
+                                    </button>
+                </form>
+              </div>
+            </div>
+            <div class="header__phone"><a href="tel:88002522222"><i>
+                                    <svg class="icon icon__phone ">
+                                      <use xlink:href="images/svg/symbols.svg#icon__phone"></use>
+                                    </svg></i><span>8 800 252 22 22</span></a></div>
+            <div class="header__city">
+              <div class="header__city-top">Доставим надёжно и быстро!</div>
+              <div class="header__cit-bottom"><span class="header__city-name">Город:							</span>
+                <div class="header__city-select">
+                                    <svg class="icon icon__geo ">
+                                      <use xlink:href="images/svg/symbols.svg#icon__geo"></use>
+                                    </svg>
+                                    <select class="select" id="city" data-placeholder="город..." name="city">
+                                      <option value=""></option>
+                                      <option value="1">text 1
+                                      </option>
+                                      <option value="2">text 2
+                                      </option>
+                                      <option value="3">text 3
+                                      </option>
+                                      <option selected value="Москва">Москва</option>
+                                    </select>
+                </div>
+              </div>
+            </div>
+            <div class="header__icon"><a href="#"><i>
+                                    <svg class="icon icon__star ">
+                                      <use xlink:href="images/svg/symbols.svg#icon__star"></use>
+                                    </svg></i><span>5</span></a><a href="#"><i>
+                                    <svg class="icon icon__cart ">
+                                      <use xlink:href="images/svg/symbols.svg#icon__cart"></use>
+                                    </svg></i><span>2</span></a></div>
+          </div>
+        </div>
+      </div>
+      <div class="header__menu">
+        <div class="container">
+          <nav class="menu">
+            <ul class="menu__list menu__level-1">
+              <li class="menu__item"><a href="#">Удилища</a>
+                <div class="menu__level-2">
+                  <div class="menu__level-2-left">
+                                      <svg class="icon icon__arrow-left ">
+                                        <use xlink:href="images/svg/symbols.svg#icon__arrow-left"></use>
+                                      </svg>
+                  </div>
+                  <div class="menu__level-2-right">
+                                      <svg class="icon icon__arrow-right ">
+                                        <use xlink:href="images/svg/symbols.svg#icon__arrow-right"></use>
+                                      </svg>
+                  </div>
+                  <div class="menu__level-2-body">
+                    <ul>
+                      <li> <a href="#"> 
+                                            <svg class="icon icon__spinning ">
+                                              <use xlink:href="images/svg/symbols.svg#icon__spinning"></use>
+                                            </svg>Спининговые						</a></li>
+                      <li> <a href="#"> 
+                                            <svg class="icon icon__casting ">
+                                              <use xlink:href="images/svg/symbols.svg#icon__casting"></use>
+                                            </svg>Кастинговые</a></li>
+                      <li><a class="hhh" href="#"> 
+                                            <svg class="icon icon__plug-in ">
+                                              <use xlink:href="images/svg/symbols.svg#icon__plug-in"></use>
+                                            </svg>Штекерные</a></li>
+                      <li> <a href="#"> 
+                                            <svg class="icon icon__float ">
+                                              <use xlink:href="images/svg/symbols.svg#icon__float"></use>
+                                            </svg>Поплавочные</a></li>
+                      <li> <a href="#"> 
+                                            <svg class="icon icon__feeder ">
+                                              <use xlink:href="images/svg/symbols.svg#icon__feeder"></use>
+                                            </svg>Фидерные</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="menu__item"><a href="#">Катушки</a>
+                <div class="menu__level-2">
+                  <div class="menu__level-2-left">
+                                      <svg class="icon icon__arrow-left ">
+                                        <use xlink:href="images/svg/symbols.svg#icon__arrow-left"></use>
+                                      </svg>
+                  </div>
+                  <div class="menu__level-2-right">
+                                      <svg class="icon icon__arrow-right ">
+                                        <use xlink:href="images/svg/symbols.svg#icon__arrow-right"></use>
+                                      </svg>
+                  </div>
+                  <div class="menu__level-2-body">
+                    <ul>
+                      <li> <a href="#"> 
+                                            <svg class="icon icon__kat-enercion ">
+                                              <use xlink:href="images/svg/symbols.svg#icon__kat-enercion"></use>
+                                            </svg>Инерционные						</a></li>
+                      <li> <a href="#"> 
+                                            <svg class="icon icon__kat-bezen ">
+                                              <use xlink:href="images/svg/symbols.svg#icon__kat-bezen"></use>
+                                            </svg>Безынерционные</a></li>
+                      <li> <a href="#"> 
+                                            <svg class="icon icon__kat-multiplikat ">
+                                              <use xlink:href="images/svg/symbols.svg#icon__kat-multiplikat"></use>
+                                            </svg>Мультипликаторные						</a></li>
+                      <li> <a href="#"> 
+                                            <svg class="icon icon__kat-shpuli ">
+                                              <use xlink:href="images/svg/symbols.svg#icon__kat-shpuli"></use>
+                                            </svg>Шпули</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="menu__item"><a href="#">Лески</a>
+                <div class="menu__level-2">
+                  <div class="menu__level-2-left">
+                                      <svg class="icon icon__arrow-left ">
+                                        <use xlink:href="images/svg/symbols.svg#icon__arrow-left"></use>
+                                      </svg>
+                  </div>
+                  <div class="menu__level-2-right">
+                                      <svg class="icon icon__arrow-right ">
+                                        <use xlink:href="images/svg/symbols.svg#icon__arrow-right"></use>
+                                      </svg>
+                  </div>
+                  <div class="menu__level-2-body">
+                    <ul>
+                      <li> <a href="#"> 
+                                            <svg class="icon icon__lesk-mofilnie ">
+                                              <use xlink:href="images/svg/symbols.svg#icon__lesk-mofilnie"></use>
+                                            </svg>Флюрокарбон						</a></li>
+                      <li> <a href="#"> 
+                                            <svg class="icon icon__lesk-shnurpl ">
+                                              <use xlink:href="images/svg/symbols.svg#icon__lesk-shnurpl"></use>
+                                            </svg>Шнуры плетеные</a></li>
+                      <li> <a href="#"> 
+                                            <svg class="icon icon__lesk-mofilnie ">
+                                              <use xlink:href="images/svg/symbols.svg#icon__lesk-mofilnie"></use>
+                                            </svg>Монофильные лески	</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="menu__item"><a href="#">Приманки</a>
+                <div class="menu__level-2">
+                  <div class="menu__level-2-left">
+                                      <svg class="icon icon__arrow-left ">
+                                        <use xlink:href="images/svg/symbols.svg#icon__arrow-left"></use>
+                                      </svg>
+                  </div>
+                  <div class="menu__level-2-right">
+                                      <svg class="icon icon__arrow-right ">
+                                        <use xlink:href="images/svg/symbols.svg#icon__arrow-right"></use>
+                                      </svg>
+                  </div>
+                  <div class="menu__level-2-body">
+                    <ul>
+                      <li> <a href="#"> 
+                                            <svg class="icon icon__prin-paralonriba ">
+                                              <use xlink:href="images/svg/symbols.svg#icon__prin-paralonriba"></use>
+                                            </svg>Поролоновые рыбки</a></li>
+                      <li> <a href="#"> 
+                                            <svg class="icon icon__prim-vobl ">
+                                              <use xlink:href="images/svg/symbols.svg#icon__prim-vobl"></use>
+                                            </svg>Воблеры</a></li>
+                      <li> <a href="#"> 
+                                            <svg class="icon icon__prim-vrachblesna ">
+                                              <use xlink:href="images/svg/symbols.svg#icon__prim-vrachblesna"></use>
+                                            </svg>Вращающиеся блесны</a></li>
+                      <li> <a href="#"> 
+                                            <svg class="icon icon__prin-kolebalka ">
+                                              <use xlink:href="images/svg/symbols.svg#icon__prin-kolebalka"></use>
+                                            </svg>Колебающиеся блесны</a></li>
+                      <li> <a href="#"> 
+                                            <svg class="icon icon__prin-silikprim ">
+                                              <use xlink:href="images/svg/symbols.svg#icon__prin-silikprim"></use>
+                                            </svg>Силиконовые приманки</a></li>
+                      <li> <a href="#"> 
+                                            <svg class="icon icon__prin-balansir ">
+                                              <use xlink:href="images/svg/symbols.svg#icon__prin-balansir"></use>
+                                            </svg>Балансиры</a></li>
+                      <li> <a href="#"> 
+                                            <svg class="icon icon__prim-mishi ">
+                                              <use xlink:href="images/svg/symbols.svg#icon__prim-mishi"></use>
+                                            </svg>Мыши</a></li>
+                      <li> <a href="#"> 
+                                            <svg class="icon icon__prin-spinerbeiti ">
+                                              <use xlink:href="images/svg/symbols.svg#icon__prin-spinerbeiti"></use>
+                                            </svg>Спиннербейты</a></li>
+                      <li> <a href="#"> 
+                                            <svg class="icon icon__prim-pilkeri ">
+                                              <use xlink:href="images/svg/symbols.svg#icon__prim-pilkeri"></use>
+                                            </svg>Пилькеры</a></li>
+                      <li> <a href="#"> 
+                                            <svg class="icon icon__prin-bokoplav ">
+                                              <use xlink:href="images/svg/symbols.svg#icon__prin-bokoplav"></use>
+                                            </svg>Бокоплавы</a></li>
+                      <li> <a href="#"> 
+                                            <svg class="icon icon__prim-mandula ">
+                                              <use xlink:href="images/svg/symbols.svg#icon__prim-mandula"></use>
+                                            </svg>Мандула</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="menu__item"><a href="#">Крючки</a>
+                <div class="menu__level-2">
+                  <div class="menu__level-2-left">
+                                      <svg class="icon icon__arrow-left ">
+                                        <use xlink:href="images/svg/symbols.svg#icon__arrow-left"></use>
+                                      </svg>
+                  </div>
+                  <div class="menu__level-2-right">
+                                      <svg class="icon icon__arrow-right ">
+                                        <use xlink:href="images/svg/symbols.svg#icon__arrow-right"></use>
+                                      </svg>
+                  </div>
+                  <div class="menu__level-2-body">
+                    <ul>
+                      <li> <a href="#"> 
+                                            <svg class="icon icon__kruk-odinarnie ">
+                                              <use xlink:href="images/svg/symbols.svg#icon__kruk-odinarnie"></use>
+                                            </svg>Одинарные крючки</a></li>
+                      <li> <a href="#"> 
+                                            <svg class="icon icon__kruk-dvoinoy ">
+                                              <use xlink:href="images/svg/symbols.svg#icon__kruk-dvoinoy"></use>
+                                            </svg>Двойные крючки</a></li>
+                      <li> <a href="#"> 
+                                            <svg class="icon icon__kruk-troinoi ">
+                                              <use xlink:href="images/svg/symbols.svg#icon__kruk-troinoi"></use>
+                                            </svg>Тройные крючки</a></li>
+                      <li> <a href="#"> 
+                                            <svg class="icon icon__kruk-offset ">
+                                              <use xlink:href="images/svg/symbols.svg#icon__kruk-offset"></use>
+                                            </svg>Оффсетные</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="menu__item"><a href="#">Грузы</a>
+                <div class="menu__level-2">
+                  <div class="menu__level-2-left">
+                                      <svg class="icon icon__arrow-left ">
+                                        <use xlink:href="images/svg/symbols.svg#icon__arrow-left"></use>
+                                      </svg>
+                  </div>
+                  <div class="menu__level-2-right">
+                                      <svg class="icon icon__arrow-right ">
+                                        <use xlink:href="images/svg/symbols.svg#icon__arrow-right"></use>
+                                      </svg>
+                  </div>
+                  <div class="menu__level-2-body">
+                    <ul>
+                      <li> <a href="#"> 
+                                            <svg class="icon icon__gruz-chebraz ">
+                                              <use xlink:href="images/svg/symbols.svg#icon__gruz-chebraz"></use>
+                                            </svg>Чебурашки разборные</a></li>
+                      <li> <a href="#"> 
+                                            <svg class="icon icon__gruz-djiggol ">
+                                              <use xlink:href="images/svg/symbols.svg#icon__gruz-djiggol"></use>
+                                            </svg>Джиг-головки</a></li>
+                      <li> <a href="#"> 
+                                            <svg class="icon icon__gruz-dlyaosnasok ">
+                                              <use xlink:href="images/svg/symbols.svg#icon__gruz-dlyaosnasok"></use>
+                                            </svg>Для оснасток</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="menu__item"><a href="#">Хранение</a>
+                <div class="menu__level-2">
+                  <div class="menu__level-2-left">
+                                      <svg class="icon icon__arrow-left ">
+                                        <use xlink:href="images/svg/symbols.svg#icon__arrow-left"></use>
+                                      </svg>
+                  </div>
+                  <div class="menu__level-2-right">
+                                      <svg class="icon icon__arrow-right ">
+                                        <use xlink:href="images/svg/symbols.svg#icon__arrow-right"></use>
+                                      </svg>
+                  </div>
+                  <div class="menu__level-2-body">
+                    <ul>
+                      <li> <a href="#"> 
+                                            <svg class="icon icon__hranenie-koshelek ">
+                                              <use xlink:href="images/svg/symbols.svg#icon__hranenie-koshelek"></use>
+                                            </svg>Кошельки под блесны</a></li>
+                      <li> <a href="#"> 
+                                            <svg class="icon icon__hranenie-poaysnayasumka ">
+                                              <use xlink:href="images/svg/symbols.svg#icon__hranenie-poaysnayasumka"></use>
+                                            </svg>Поясные сумки</a></li>
+                      <li> <a href="#"> 
+                                            <svg class="icon icon__hranenie-ryukzak ">
+                                              <use xlink:href="images/svg/symbols.svg#icon__hranenie-ryukzak"></use>
+                                            </svg>Рюкзаки</a></li>
+                      <li> <a href="#"> 
+                                            <svg class="icon icon__hranenie-sumkaskorobkami ">
+                                              <use xlink:href="images/svg/symbols.svg#icon__hranenie-sumkaskorobkami"></use>
+                                            </svg>Сумки с коробками</a></li>
+                      <li> <a href="#"> 
+                                            <svg class="icon icon__hranenie-termokonteiner ">
+                                              <use xlink:href="images/svg/symbols.svg#icon__hranenie-termokonteiner"></use>
+                                            </svg>Термоконтейнеры</a></li>
+                      <li> <a href="#"> 
+                                            <svg class="icon icon__hranenie-chehli ">
+                                              <use xlink:href="images/svg/symbols.svg#icon__hranenie-chehli"></use>
+                                            </svg>Чехлы</a></li>
+                      <li> <a href="#"> 
+                                            <svg class="icon icon__hranenie-yashik_i_chemodani ">
+                                              <use xlink:href="images/svg/symbols.svg#icon__hranenie-yashik_i_chemodani"></use>
+                                            </svg>Ящики и чемоданы</a></li>
+                      <li> <a href="#"> 
+                                            <svg class="icon icon__hranenie-sumki ">
+                                              <use xlink:href="images/svg/symbols.svg#icon__hranenie-sumki"></use>
+                                            </svg>Сумки</a></li>
+                      <li> <a href="#"> 
+                                            <svg class="icon icon__hranenie-korobdlyaprimanki ">
+                                              <use xlink:href="images/svg/symbols.svg#icon__hranenie-korobdlyaprimanki"></use>
+                                            </svg>Коробки под приманки</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="menu__item"><a href="#">Аксессуары</a>
+                <div class="menu__level-2">
+                  <div class="menu__level-2-left">
+                                      <svg class="icon icon__arrow-left ">
+                                        <use xlink:href="images/svg/symbols.svg#icon__arrow-left"></use>
+                                      </svg>
+                  </div>
+                  <div class="menu__level-2-right">
+                                      <svg class="icon icon__arrow-right ">
+                                        <use xlink:href="images/svg/symbols.svg#icon__arrow-right"></use>
+                                      </svg>
+                  </div>
+                  <div class="menu__level-2-body">
+                    <ul>
+                      <li> <a href="#"> 
+                                            <svg class="icon icon__akses-lip-grip ">
+                                              <use xlink:href="images/svg/symbols.svg#icon__akses-lip-grip"></use>
+                                            </svg>Lip Grip</a></li>
+                      <li class="menu__level-2__dropdown"><a href="#"> 
+                                            <svg class="icon icon__akses-povod_is_struni_stal ">
+                                              <use xlink:href="images/svg/symbols.svg#icon__akses-povod_is_struni_stal"></use>
+                                            </svg>Поводки</a>
+                        <div class="menu__level-3">
+                          <ul>
+                            <li> <a href="#">Из струны</a></li>
+                            <li> <a href="#">Стальные</a></li>
+                            <li> <a href="#">Титановые</a></li>
+                            <li> <a href="#">Флюрокарбоновые						</a></li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li> <a href="#"> 
+                                            <svg class="icon icon__akses-instrument ">
+                                              <use xlink:href="images/svg/symbols.svg#icon__akses-instrument"></use>
+                                            </svg>Инструменты</a></li>
+                      <li class="menu__level-2__dropdown"><a href="#"> 
+                                            <svg class="icon icon__akses-vertlyuzhki ">
+                                              <use xlink:href="images/svg/symbols.svg#icon__akses-vertlyuzhki"></use>
+                                            </svg>Оснастка</a>
+                        <div class="menu__level-3">
+                          <ul>
+                            <li> <a href="#">Карабины</a></li>
+                            <li> <a href="#">Кольца заводные</a></li>
+                            <li> <a href="#">Вертлюжки	</a></li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li> <a href="#"> 
+                                            <svg class="icon icon__akses-vesi ">
+                                              <use xlink:href="images/svg/symbols.svg#icon__akses-vesi"></use>
+                                            </svg>Весы					</a></li>
+                      <li> <a href="#"> 
+                                            <svg class="icon icon__akses-podsak-i-kukan ">
+                                              <use xlink:href="images/svg/symbols.svg#icon__akses-podsak-i-kukan"></use>
+                                            </svg>Подсаки и куканы</a></li>
+                      <li> <a href="#"> 
+                                            <svg class="icon icon__akses-remnispining ">
+                                              <use xlink:href="images/svg/symbols.svg#icon__akses-remnispining"></use>
+                                            </svg>Ремни для спиннинга</a></li>
+                      <li> <a href="#"> 
+                                            <svg class="icon icon__akses-retriveri ">
+                                              <use xlink:href="images/svg/symbols.svg#icon__akses-retriveri"></use>
+                                            </svg>Ретриверы</a></li>
+                      <li> <a href="#"> 
+                                            <svg class="icon icon__akses-smazki ">
+                                              <use xlink:href="images/svg/symbols.svg#icon__akses-smazki"></use>
+                                            </svg>Смазки</a></li>
+                      <li> <a href="#"> 
+                                            <svg class="icon icon__akses-stopori ">
+                                              <use xlink:href="images/svg/symbols.svg#icon__akses-stopori"></use>
+                                            </svg>Стопоры</a></li>
+                      <li> <a href="#"> 
+                                            <svg class="icon icon__akses-schetchikleski ">
+                                              <use xlink:href="images/svg/symbols.svg#icon__akses-schetchikleski"></use>
+                                            </svg>Счетчики лески</a></li>
+                      <li> <a href="#"> 
+                                            <svg class="icon icon__akses-kreplenieholot ">
+                                              <use xlink:href="images/svg/symbols.svg#icon__akses-kreplenieholot"></use>
+                                            </svg>Крепления для эхолотов</a></li>
+                      <li> <a href="#"> 
+                                            <svg class="icon icon__akses-termos ">
+                                              <use xlink:href="images/svg/symbols.svg#icon__akses-termos"></use>
+                                            </svg>Термосы</a></li>
+                      <li> <a href="#"> 
+                                            <svg class="icon icon__akses-fonaric ">
+                                              <use xlink:href="images/svg/symbols.svg#icon__akses-fonaric"></use>
+                                            </svg>Фонари</a></li>
+                      <li> <a href="#"> 
+                                            <svg class="icon icon__akses-hukkiperi ">
+                                              <use xlink:href="images/svg/symbols.svg#icon__akses-hukkiperi"></use>
+                                            </svg>Хукипперы</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="menu__item"><a href="#">Одежда</a>
+                <div class="menu__level-2">
+                  <div class="menu__level-2-left">
+                                      <svg class="icon icon__arrow-left ">
+                                        <use xlink:href="images/svg/symbols.svg#icon__arrow-left"></use>
+                                      </svg>
+                  </div>
+                  <div class="menu__level-2-right">
+                                      <svg class="icon icon__arrow-right ">
+                                        <use xlink:href="images/svg/symbols.svg#icon__arrow-right"></use>
+                                      </svg>
+                  </div>
+                  <div class="menu__level-2-body">
+                    <ul>
+                      <li> <a href="#"> 
+                                            <svg class="icon icon__odezhda-kostyum ">
+                                              <use xlink:href="images/svg/symbols.svg#icon__odezhda-kostyum"></use>
+                                            </svg>Костюмы</a></li>
+                      <li> <a href="#"> 
+                                            <svg class="icon icon__odezhda-sviter ">
+                                              <use xlink:href="images/svg/symbols.svg#icon__odezhda-sviter"></use>
+                                            </svg>Толстовки/Свитера</a></li>
+                      <li> <a href="#"> 
+                                            <svg class="icon icon__odezhda-kurtka ">
+                                              <use xlink:href="images/svg/symbols.svg#icon__odezhda-kurtka"></use>
+                                            </svg>Куртки</a></li>
+                      <li> <a href="#"> 
+                                            <svg class="icon icon__odezhda-bryuki ">
+                                              <use xlink:href="images/svg/symbols.svg#icon__odezhda-bryuki"></use>
+                                            </svg>Брюки</a></li>
+                      <li> <a href="#"> 
+                                            <svg class="icon icon__odezhda-zhilet ">
+                                              <use xlink:href="images/svg/symbols.svg#icon__odezhda-zhilet"></use>
+                                            </svg>Жилеты</a></li>
+                      <li> <a href="#"> 
+                                            <svg class="icon icon__odezhda-flisgorka ">
+                                              <use xlink:href="images/svg/symbols.svg#icon__odezhda-flisgorka"></use>
+                                            </svg>Флисовая одежда</a></li>
+                      <li> <a href="#"> 
+                                            <svg class="icon icon__odezhda-termo ">
+                                              <use xlink:href="images/svg/symbols.svg#icon__odezhda-termo"></use>
+                                            </svg>Термобелье</a></li>
+                      <li> <a href="#"> 
+                                            <svg class="icon icon__odezhda-shapka ">
+                                              <use xlink:href="images/svg/symbols.svg#icon__odezhda-shapka"></use>
+                                            </svg>Головные уборы</a></li>
+                      <li> <a href="#"> 
+                                            <svg class="icon icon__odezhda-kurtkamembran ">
+                                              <use xlink:href="images/svg/symbols.svg#icon__odezhda-kurtkamembran"></use>
+                                            </svg>Куртки мембранные</a></li>
+                      <li> <a href="#"> 
+                                            <svg class="icon icon__odezhda-perchatki ">
+                                              <use xlink:href="images/svg/symbols.svg#icon__odezhda-perchatki"></use>
+                                            </svg>Перчатки</a></li>
+                      <li> <a href="#"> 
+                                            <svg class="icon icon__odezhda-noski ">
+                                              <use xlink:href="images/svg/symbols.svg#icon__odezhda-noski"></use>
+                                            </svg>Носки</a></li>
+                      <li> <a href="#"> 
+                                            <svg class="icon icon__odezhda-futbolka ">
+                                              <use xlink:href="images/svg/symbols.svg#icon__odezhda-futbolka"></use>
+                                            </svg>Рубашки футболки</a></li>
+                      <li> <a href="#"> 
+                                            <svg class="icon icon__odezhda-sharf ">
+                                              <use xlink:href="images/svg/symbols.svg#icon__odezhda-sharf"></use>
+                                            </svg>Шарфы</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="menu__item"><a href="#">Обувь</a>
+                <div class="menu__level-2">
+                  <div class="menu__level-2-left">
+                                      <svg class="icon icon__arrow-left ">
+                                        <use xlink:href="images/svg/symbols.svg#icon__arrow-left"></use>
+                                      </svg>
+                  </div>
+                  <div class="menu__level-2-right">
+                                      <svg class="icon icon__arrow-right ">
+                                        <use xlink:href="images/svg/symbols.svg#icon__arrow-right"></use>
+                                      </svg>
+                  </div>
+                  <div class="menu__level-2-body">
+                    <ul>
+                      <li> <a href="#"> 
+                                            <svg class="icon icon__obuv-kombez ">
+                                              <use xlink:href="images/svg/symbols.svg#icon__obuv-kombez"></use>
+                                            </svg>Вейдерсы</a></li>
+                      <li> <a href="#"> 
+                                            <svg class="icon icon__obuv-botimok ">
+                                              <use xlink:href="images/svg/symbols.svg#icon__obuv-botimok"></use>
+                                            </svg>Ботинки</a></li>
+                      <li> <a href="#"> 
+                                            <svg class="icon icon__obuv-sapog ">
+                                              <use xlink:href="images/svg/symbols.svg#icon__obuv-sapog"></use>
+                                            </svg>Сапоги</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="menu__item"><a href="#">Лодки</a>
+                <div class="menu__level-2">
+                  <div class="menu__level-2-left">
+                                      <svg class="icon icon__arrow-left ">
+                                        <use xlink:href="images/svg/symbols.svg#icon__arrow-left"></use>
+                                      </svg>
+                  </div>
+                  <div class="menu__level-2-right">
+                                      <svg class="icon icon__arrow-right ">
+                                        <use xlink:href="images/svg/symbols.svg#icon__arrow-right"></use>
+                                      </svg>
+                  </div>
+                  <div class="menu__level-2-body">
+                    <ul>
+                      <li> <a href="#"> 
+                                            <svg class="icon icon__lodki-fishkayak ">
+                                              <use xlink:href="images/svg/symbols.svg#icon__lodki-fishkayak"></use>
+                                            </svg>Фишкаяк</a></li>
+                      <li> <a href="#"> 
+                                            <svg class="icon icon__lodki-rezina ">
+                                              <use xlink:href="images/svg/symbols.svg#icon__lodki-rezina"></use>
+                                            </svg>Резиновые</a></li>
+                      <li> <a href="#"> 
+                                            <svg class="icon icon__lodki-metall ">
+                                              <use xlink:href="images/svg/symbols.svg#icon__lodki-metall"></use>
+                                            </svg>Аллюминевые</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <div class="content">
+      <div class="container-1580">
+        <div class="breadcrumbs">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Главная</a></li>
+            <li class="breadcrumbs__item breadcrumbs__item--active"><span>Удилища</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="cat">
+        <div class="cat__header">
+          <div class="cat__title">
+            <h1>Удилища</h1>
+          </div>
+          <div class="cat__icons"><i class="cat__icon-list">
+                                <svg class="icon icon__cat-line ">
+                                  <use xlink:href="images/svg/symbols.svg#icon__cat-line"></use>
+                                </svg></i><i class="cat__icon-filter">
+                                <svg class="icon icon__setings ">
+                                  <use xlink:href="images/svg/symbols.svg#icon__setings"></use>
+                                </svg></i></div>
+          <div class="cat__icons-big"><i class="cat__icon-card cat__icon-active">
+                                <svg class="icon icon__cat-box ">
+                                  <use xlink:href="images/svg/symbols.svg#icon__cat-box"></use>
+                                </svg></i><i class="cat__icon-list">
+                                <svg class="icon icon__cat-line ">
+                                  <use xlink:href="images/svg/symbols.svg#icon__cat-line"></use>
+                                </svg></i></div>
+          <div class="cat__sort">
+            <div class="cat-sort"><span class="cat-sort__title">Сортировать: </span>
+                                <select class="select" id="cat-sort" data-placeholder="по умолчанию" name="cat-sort">
+                                  <option value=""></option>
+                                  <option value="1">text 1
+                                  </option>
+                                  <option value="2">text 2
+                                  </option>
+                                  <option value="3">text 3
+                                  </option>
+                                  <option selected value="по умолчанию">по умолчанию</option>
+                                </select>
+            </div>
+          </div>
+        </div>
+        <div class="cat__body">
+          <div class="cat__sidebar">
+            <p>jhgfjhfgjhg</p>
+          </div>
+          <div class="cat__main">
+            <div class="cat__filter">
+              <div class="filter-categories">
+                <ul class="filter-categories__list">
+                  <li class="filter-categories__item filter-categories__item--active">Все</li>
+                  <li class="filter-categories__item">Запасные хлысты и кольца</li>
+                  <li class="filter-categories__item">Кружки</li>
+                  <li class="filter-categories__item">Подставки для удилищ</li>
+                  <li class="filter-categories__item">Удилища матчевые</li>
+                  <li class="filter-categories__item">Удилища поплавочные</li>
+                  <li class="filter-categories__item">Удилища карповые</li>
+                  <li class="filter-categories__item">Удочки для зимней рыбалки</li>
+                </ul>
+              </div>
+            </div>
+            <ul class="cat__list">
+              <li class="cat__item">
+                                <article class="product">
+                                  <div class="product__conditions">
+                                    <div class="product__spec"><span>Спецпредложение</span></div>
+                                  </div>
+                                  <div class="product__img"><a href="#"><img src="images/product__img-04.jpg" alt="Катушка SALMO Sniper Spin 5 2110FD"></a></div>
+                                  <div class="product__body">
+                                    <div class="product__detail"><a href="#">
+                                        <h2 class="product__title">Катушка SALMO Sniper Spin 5 2110FD</h2></a>
+                                      <div class="product__price-block"><span class="product__old-price">5 500 руб</span>
+                                        <div class="product__price-not"><span class="product__price">4 500<b>руб</b></span><span class="product__not">Нет в наличии</span>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="product__info">
+                                      <div class="product__feature"><span><i>
+                                                                      <svg class="icon icon__shield ">
+                                                                        <use xlink:href="images/svg/symbols.svg#icon__shield"></use>
+                                                                      </svg></i>Гарантия на товар 1 год</span><span><i>
+                                                                      <svg class="icon icon__aircraft ">
+                                                                        <use xlink:href="images/svg/symbols.svg#icon__aircraft"></use>
+                                                                      </svg></i>Доставка по РФ бесплатно</span><span><i>
+                                                                      <svg class="icon icon__gift ">
+                                                                        <use xlink:href="images/svg/symbols.svg#icon__gift"></use>
+                                                                      </svg></i>Блесна в подарок</span></div>
+                                      <div class="product__action">
+                                                                <button class="btn product__btn-star" type="button" role="button"><span class="icon__star">
+                                                                                            <svg class="icon icon__star ">
+                                                                                              <use xlink:href="images/svg/symbols.svg#icon__star"></use>
+                                                                                            </svg></span>
+                                                                </button>
+                                                                <button class="btn product__btn-select" type="button" role="button"><span class="btn__text">Выбрать</span>
+                                                                </button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </article>
+              </li>
+              <li class="cat__item">
+                                <article class="product">
+                                  <div class="product__conditions">
+                                  </div>
+                                  <div class="product__img"><a href="#"><img src="images/product__img-03.jpg" alt="Воблер SALMO Jack"></a></div>
+                                  <div class="product__body">
+                                    <div class="product__detail"><a href="#">
+                                        <h2 class="product__title">Воблер SALMO Jack</h2></a>
+                                      <div class="product__price-block"><span class="product__old-price"></span>
+                                        <div class="product__price-not"><span class="product__price">550<b>руб</b></span>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="product__info">
+                                      <div class="product__feature"><span><i>
+                                                                      <svg class="icon icon__shield ">
+                                                                        <use xlink:href="images/svg/symbols.svg#icon__shield"></use>
+                                                                      </svg></i>Гарантия на товар 1 год</span><span><i>
+                                                                      <svg class="icon icon__aircraft ">
+                                                                        <use xlink:href="images/svg/symbols.svg#icon__aircraft"></use>
+                                                                      </svg></i>Доставка по РФ бесплатно</span><span><i>
+                                                                      <svg class="icon icon__gift ">
+                                                                        <use xlink:href="images/svg/symbols.svg#icon__gift"></use>
+                                                                      </svg></i>Блесна в подарок</span></div>
+                                      <div class="product__action">
+                                                                <button class="btn product__btn-star" type="button" role="button"><span class="icon__star">
+                                                                                            <svg class="icon icon__star ">
+                                                                                              <use xlink:href="images/svg/symbols.svg#icon__star"></use>
+                                                                                            </svg></span>
+                                                                </button>
+                                                                <button class="btn product__btn-select" type="button" role="button"><span class="btn__text">Выбрать</span>
+                                                                </button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </article>
+              </li>
+              <li class="cat__item">
+                                <article class="product">
+                                  <div class="product__conditions">
+                                    <div class="product__new"><span>Новинка</span></div>
+                                  </div>
+                                  <div class="product__img"><a href="#"><img src="images/product__img-02.jpg" alt="Воблер SALMO Jack"></a></div>
+                                  <div class="product__body">
+                                    <div class="product__detail"><a href="#">
+                                        <h2 class="product__title">Воблер SALMO Jack</h2></a>
+                                      <div class="product__price-block"><span class="product__old-price"></span>
+                                        <div class="product__price-not"><span class="product__price">550<b>руб</b></span>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="product__info">
+                                      <div class="product__feature"><span><i>
+                                                                      <svg class="icon icon__shield ">
+                                                                        <use xlink:href="images/svg/symbols.svg#icon__shield"></use>
+                                                                      </svg></i>Гарантия на товар 1 год</span><span><i>
+                                                                      <svg class="icon icon__aircraft ">
+                                                                        <use xlink:href="images/svg/symbols.svg#icon__aircraft"></use>
+                                                                      </svg></i>Доставка по РФ бесплатно</span><span><i>
+                                                                      <svg class="icon icon__gift ">
+                                                                        <use xlink:href="images/svg/symbols.svg#icon__gift"></use>
+                                                                      </svg></i>Блесна в подарок</span></div>
+                                      <div class="product__action">
+                                                                <button class="btn product__btn-star" type="button" role="button"><span class="icon__star">
+                                                                                            <svg class="icon icon__star ">
+                                                                                              <use xlink:href="images/svg/symbols.svg#icon__star"></use>
+                                                                                            </svg></span>
+                                                                </button>
+                                                                <button class="btn product__btn-select" type="button" role="button"><span class="btn__text">Выбрать</span>
+                                                                </button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </article>
+              </li>
+              <li class="cat__item">
+                                <article class="product">
+                                  <div class="product__conditions product__conditions--big">
+                                    <div class="product__new"><span>Новинка</span></div>
+                                    <div class="product__spec"><span>Спецпредложение</span></div>
+                                  </div>
+                                  <div class="product__img"><a href="#"><img src="images/product__img-01.jpg" alt="Удилище нахлыстовое SALMO Diamond SKY 34563456"></a></div>
+                                  <div class="product__body">
+                                    <div class="product__detail"><a href="#">
+                                        <h2 class="product__title">Удилище нахлыстовое SALMO Diamond SKY 34563456</h2></a>
+                                      <div class="product__price-block"><span class="product__old-price"></span>
+                                        <div class="product__price-not"><span class="product__price">1 825<b>руб</b></span><span class="product__not">Нет в наличии</span>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="product__info">
+                                      <div class="product__feature"><span><i>
+                                                                      <svg class="icon icon__shield ">
+                                                                        <use xlink:href="images/svg/symbols.svg#icon__shield"></use>
+                                                                      </svg></i>Гарантия на товар 1 год</span><span><i>
+                                                                      <svg class="icon icon__aircraft ">
+                                                                        <use xlink:href="images/svg/symbols.svg#icon__aircraft"></use>
+                                                                      </svg></i>Доставка по РФ бесплатно</span><span><i>
+                                                                      <svg class="icon icon__gift ">
+                                                                        <use xlink:href="images/svg/symbols.svg#icon__gift"></use>
+                                                                      </svg></i>Блесна в подарок</span></div>
+                                      <div class="product__action">
+                                                                <button class="btn product__btn-star" type="button" role="button"><span class="icon__star">
+                                                                                            <svg class="icon icon__star ">
+                                                                                              <use xlink:href="images/svg/symbols.svg#icon__star"></use>
+                                                                                            </svg></span>
+                                                                </button>
+                                                                <button class="btn product__btn-select" type="button" role="button"><span class="btn__text">Выбрать</span>
+                                                                </button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </article>
+              </li>
+              <li class="cat__item">
+                                <article class="product">
+                                  <div class="product__conditions">
+                                    <div class="product__new"><span>Новинка</span></div>
+                                  </div>
+                                  <div class="product__img"><a href="#"><img src="images/product__img-02.jpg" alt="Воблер SALMO Jack"></a></div>
+                                  <div class="product__body">
+                                    <div class="product__detail"><a href="#">
+                                        <h2 class="product__title">Воблер SALMO Jack</h2></a>
+                                      <div class="product__price-block"><span class="product__old-price"></span>
+                                        <div class="product__price-not"><span class="product__price">550<b>руб</b></span>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="product__info">
+                                      <div class="product__feature"><span><i>
+                                                                      <svg class="icon icon__shield ">
+                                                                        <use xlink:href="images/svg/symbols.svg#icon__shield"></use>
+                                                                      </svg></i>Гарантия на товар 1 год</span><span><i>
+                                                                      <svg class="icon icon__aircraft ">
+                                                                        <use xlink:href="images/svg/symbols.svg#icon__aircraft"></use>
+                                                                      </svg></i>Доставка по РФ бесплатно</span><span><i>
+                                                                      <svg class="icon icon__gift ">
+                                                                        <use xlink:href="images/svg/symbols.svg#icon__gift"></use>
+                                                                      </svg></i>Блесна в подарок</span></div>
+                                      <div class="product__action">
+                                                                <button class="btn product__btn-star" type="button" role="button"><span class="icon__star">
+                                                                                            <svg class="icon icon__star ">
+                                                                                              <use xlink:href="images/svg/symbols.svg#icon__star"></use>
+                                                                                            </svg></span>
+                                                                </button>
+                                                                <button class="btn product__btn-select" type="button" role="button"><span class="btn__text">Выбрать</span>
+                                                                </button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </article>
+              </li>
+              <li class="cat__item">
+                                <article class="product">
+                                  <div class="product__conditions product__conditions--big">
+                                    <div class="product__new"><span>Новинка</span></div>
+                                    <div class="product__spec"><span>Спецпредложение</span></div>
+                                  </div>
+                                  <div class="product__img"><a href="#"><img src="images/product__img-01.jpg" alt="Удилище нахлыстовое SALMO Diamond SKY 34563456"></a></div>
+                                  <div class="product__body">
+                                    <div class="product__detail"><a href="#">
+                                        <h2 class="product__title">Удилище нахлыстовое SALMO Diamond SKY 34563456</h2></a>
+                                      <div class="product__price-block"><span class="product__old-price"></span>
+                                        <div class="product__price-not"><span class="product__price">1 825<b>руб</b></span><span class="product__not">Нет в наличии</span>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="product__info">
+                                      <div class="product__feature"><span><i>
+                                                                      <svg class="icon icon__shield ">
+                                                                        <use xlink:href="images/svg/symbols.svg#icon__shield"></use>
+                                                                      </svg></i>Гарантия на товар 1 год</span><span><i>
+                                                                      <svg class="icon icon__aircraft ">
+                                                                        <use xlink:href="images/svg/symbols.svg#icon__aircraft"></use>
+                                                                      </svg></i>Доставка по РФ бесплатно</span><span><i>
+                                                                      <svg class="icon icon__gift ">
+                                                                        <use xlink:href="images/svg/symbols.svg#icon__gift"></use>
+                                                                      </svg></i>Блесна в подарок</span></div>
+                                      <div class="product__action">
+                                                                <button class="btn product__btn-star" type="button" role="button"><span class="icon__star">
+                                                                                            <svg class="icon icon__star ">
+                                                                                              <use xlink:href="images/svg/symbols.svg#icon__star"></use>
+                                                                                            </svg></span>
+                                                                </button>
+                                                                <button class="btn product__btn-select" type="button" role="button"><span class="btn__text">Выбрать</span>
+                                                                </button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </article>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+        <div class="bottom">
+          <div class="bottom__subscribe">
+            <div class="container-1180">
+              <div class="subscribe">
+                <h2>Подпишись!</h2>
+                <p>Новинки, cкидки, предложения!</p>
+                <form class="subscribe__form">
+                  <input type="text" placeholder="Введите адрес ел. почты">
+                                <button class="btn" type="button" role="button"><span class="btn__text">Подписаться</span>
+                                </button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <footer class="footer">
+            <div class="footer__top">
+              <div class="footer__menu">
+                <div>
+                                <div class="menu-footer">
+                                  <div class="menu-footer__header">
+                                    <h3 class="menu-footer__title">Информация</h3>
+                                  </div>
+                                  <div class="menu-footer__body">
+                                    <ul>
+                                      <li><a href="#">О нас</a></li>
+                                      <li><a href="#">Гарантии</a></li>
+                                      <li><a href="#">Консультация</a></li>
+                                      <li><a href="#">Новости</a></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                </div>
+                <div>
+                                <div class="menu-footer">
+                                  <div class="menu-footer__header">
+                                    <h3 class="menu-footer__title">ДОСТАВКА И ОПЛАТА</h3>
+                                  </div>
+                                  <div class="menu-footer__body">
+                                    <ul>
+                                      <li><a href="#">О нас</a></li>
+                                      <li><a href="#">Гарантии</a></li>
+                                      <li><a href="#">Консультация</a></li>
+                                      <li><a href="#">Новости</a></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                </div>
+                <div>
+                                <div class="menu-footer">
+                                  <div class="menu-footer__header">
+                                    <h3 class="menu-footer__title">ТОВАРЫ</h3>
+                                  </div>
+                                  <div class="menu-footer__body">
+                                    <ul>
+                                      <li><a href="#">О нас</a></li>
+                                      <li><a href="#">Гарантии</a></li>
+                                      <li><a href="#">Консультация</a></li>
+                                      <li><a href="#">Новости</a></li>
+                                    </ul>
+                                    <ul>
+                                      <li><a href="#">О нас</a></li>
+                                      <li><a href="#">Гарантии</a></li>
+                                      <li><a href="#">Консультация</a></li>
+                                      <li><a href="#">Новости</a></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                </div>
+              </div>
+              <div class="footer__contacts">
+                <h3>ПО ВСЕМ ВОПРОСАМ </h3>
+                <div>
+                  <p><i>
+                                        <svg class="icon icon__mail ">
+                                          <use xlink:href="images/svg/symbols.svg#icon__mail"></use>
+                                        </svg></i><a href="mailto:lovimtut@mail.ru">lovimtut@mail.ru</a></p>
+                  <p><i>
+                                        <svg class="icon icon__phone ">
+                                          <use xlink:href="images/svg/symbols.svg#icon__phone"></use>
+                                        </svg></i><a href="tel:88002522222">8 800 252 22 22</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="footer__border"></div>
+            <div class="footer__icons">
+              <div class="footer__ico-money">
+                <ul>
+                  <li><img src="images/footer__yandex.svg" alt="ico yandex" data-color="footer__yandex"></li>
+                  <li><img src="images/footer__qiwi.svg" alt="ico qiwi" data-color="footer__qiwi"></li>
+                  <li><img src="images/footer__webmoney.svg" alt="ico webmoney" data-color="footer__webmoney"></li>
+                  <li><img src="images/footer__mastercard.svg" alt="ico mastercard" data-color="footer__mastercard"></li>
+                  <li><img src="images/footer__visa.svg" alt="ico visa" data-color="footer__visa"></li>
+                  <li><img src="images/footer__mir.svg" alt="ico mir" data-color="footer__mir"></li>
+                </ul>
+              </div>
+              <div class="footer__border footer__border--small"></div>
+              <div class="footer__ico-soc">
+                <ul>
+                  <li><a class="social" href="#">
+                                                        <svg class="icon icon__vk ">
+                                                          <use xlink:href="images/svg/symbols.svg#icon__vk"></use>
+                                                        </svg></a>
+                  </li>
+                  <li><a class="social" href="#">
+                                                        <svg class="icon icon__facebook ">
+                                                          <use xlink:href="images/svg/symbols.svg#icon__facebook"></use>
+                                                        </svg></a>
+                  </li>
+                  <li><a class="social" href="#">
+                                                        <svg class="icon icon__classmates ">
+                                                          <use xlink:href="images/svg/symbols.svg#icon__classmates"></use>
+                                                        </svg></a>
+                  </li>
+                  <li><a class="social" href="#">
+                                                        <svg class="icon icon__in ">
+                                                          <use xlink:href="images/svg/symbols.svg#icon__in"></use>
+                                                        </svg></a>
+                  </li>
+                  <li><a class="social" href="#">
+                                                        <svg class="icon icon__youtube ">
+                                                          <use xlink:href="images/svg/symbols.svg#icon__youtube"></use>
+                                                        </svg></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer__bottom"><span>2018 | &copy; Lovimtut.ru | <a href="/">Карта сайта</a></span></div>
+          </footer>
+        </div>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/svg4everybody.min.js"></script>
+    <script>$(document).ready(function () {	svg4everybody({});});</script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/selectize.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

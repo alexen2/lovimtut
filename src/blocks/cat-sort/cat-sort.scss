@@ -1,0 +1,49 @@
+.cat-sort {
+	background-color: #ffffff;
+	border: 1px solid #D9D9D9;
+	box-sizing: border-box;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding-left: 15px;
+}
+.cat-sort__title {
+	display: block;
+	font-size: 12px;
+	line-height: 18px;
+	padding: 5px 5px 5px 0;
+
+	@media(min-width: 768px) {
+		padding: 10px 5px 10px 0;
+	}
+}
+.cat-sort .select.selectize-control.single .selectize-input:after {
+	content: "";
+	top: 7px;
+	border: none;
+	width: 6px;
+	height: 6px;
+	border-right: 1px solid #000000;
+	border-bottom: 1px solid #000000;
+	transform: rotate(45deg);
+}
+.cat-sort .select.selectize-control.single .focus.selectize-input:after {
+	top: 12px;
+	transform: rotate(-135deg);
+}
+.cat-sort .selectize-control {
+	height: 18px;
+  line-height: 18px;
+  font-weight: 500;
+  width: 100%;
+  background: none;  
+}
+.cat-sort .selectize-input {
+  background: none;
+  padding: 0 0 5px 0;
+
+  @media(min-width: 768px) {
+		padding: 0 0 10px 0;
+	}
+}
