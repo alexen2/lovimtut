@@ -10,4 +10,8 @@ $(document).ready(function() {
 			mobile_filter.addClass('mobile-filter--show');
 		}		
 	});
+
+	$('.mobile-filter-close').click(function() {
+		$('.mobile-filter').removeClass('mobile-filter--show');
+	});
 });

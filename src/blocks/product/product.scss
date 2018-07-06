@@ -267,6 +267,14 @@
 	border-radius: 50%;
 	margin-right: 20px;
 	box-sizing: border-box;
+	transition: all 0.6s;
+}
+.product__btn-star:hover {
+	border: 1px solid rgba(30, 172, 246, 1);
+}
+.product__btn-star:hover .icon {
+	transition: all 0.6s;
+	fill: rgba(30, 172, 246, 1);
 }
 .product__btn-select {
 	width: 116px;

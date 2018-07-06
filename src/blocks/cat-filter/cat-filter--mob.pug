@@ -1,5 +1,8 @@
 div.cat-filter
 	div.cat-filter__block
+		div.cat-filter__header
+			span Цена, руб
+
 		div.cat-filter__slider
 			div.cat-filter__inputs
 				input(type="text", id="minCost-1-mob", value="698")
@@ -8,6 +11,9 @@ div.cat-filter
 			div(id="slider-1-mob")
 
 	div.cat-filter__block
+		div.cat-filter__header
+			span Длина, мм
+
 		div.cat-filter__slider
 			div.cat-filter__inputs
 				input(type="text", id="minCost-2-mob", value="63")
@@ -16,6 +22,9 @@ div.cat-filter
 			div(id="slider-2-mob")
 
 	div.cat-filter__block
+		div.cat-filter__header
+			span Тест, г
+			
 		div.cat-filter__slider
 			div.cat-filter__inputs
 				input(type="text", id="minCost-3-mob", value="200")
@@ -32,7 +41,7 @@ div.cat-filter
 		div.cat-filter__header
 			span Бренды
 
-			a(href="#") Сбросить
+			a.cat-filter__clear-check(href="#") Сбросить
 
 		div.cat-filter__scroll
 			+checkbox('Shimano')

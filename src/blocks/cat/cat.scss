@@ -273,5 +273,11 @@
 		padding: 40px 0 80px;
 	}
 }
+.cat__icons i.cat__icon-hide {
+	display: none;
+}
+.cat__icons .cat__icon-card {
+	border: 1px solid #D9D9D9;
+}
 
 @import '--list/--list';
