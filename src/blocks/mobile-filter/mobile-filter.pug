@@ -1,0 +1,8 @@
+div.mobile-filter
+	div.mobile-filter__header
+		include ../btn/btn.pug
+		+btn({text: 'Сбросить все'})
+		+btn({text: 'Применить'})
+
+	div.mobile-filter__body
+		include ../cat-filter/cat-filter--mob.pug

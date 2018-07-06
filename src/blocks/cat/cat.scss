@@ -241,5 +241,37 @@
 		margin-right: 0;
 	}
 }
+.cat__show-more {
+	padding: 30px 20px;
+	text-align: center;
+
+	@media(min-width: 768px) {
+		padding: 40px 20px;
+	}
+	@media(min-width: 1200px) {
+		display: none;
+	}
+}
+.cat__show-more .btn {
+	width: 100%;
+	background: none;
+	border: 1px solid #1eacf6;
+
+	@media(min-width: 768px) {
+		width: 216px;
+	}
+}
+.cat__show-more .btn__text {
+	color: #1eacf6;
+	line-height: 40px;
+}
+.cat__pagination {
+	display: none;
+
+	@media(min-width: 1200px) {
+		display: block;
+		padding: 40px 0 80px;
+	}
+}
 
 @import '--list/--list';

@@ -1,3 +1,40 @@
+(function($){
+  $(window).on("load",function(){    
+    $(".brands-line").mCustomScrollbar({
+      axis: "x",
+      moveDragger: true
+    });    
+  });
+})(jQuery);
+$(document).ready(function() {
+	var cat__icons = $('.cat__icons-big');
+	var card = cat__icons.children('.cat__icon-card');
+	var list = cat__icons.children('.cat__icon-list');
+	var cat = $('.cat');
+	var product = $('.product');
+
+	card.click(function() {
+		if(card.hasClass('cat__icon-active')) {
+			return false;
+		} else {
+			card.addClass('cat__icon-active');
+			list.removeClass('cat__icon-active');
+			cat.removeClass('cat--list');	
+			product.removeClass('product--list');	
+		}	
+	});
+
+	list.click(function() {
+		if(list.hasClass('cat__icon-active')) {
+			return false;
+		} else {
+			list.addClass('cat__icon-active');
+			card.removeClass('cat__icon-active');
+			cat.addClass('cat--list');
+			product.addClass('product--list');	
+		}	
+	});
+});
 $(document).ready(function() {	
 	jQuery("#slider-1").slider({
 		min: 0,
@@ -42,6 +79,52 @@ $(document).ready(function() {
 	  slide: function(event, ui){
 			jQuery("input#minCost-3").val(jQuery("#slider-3").slider("values",0));
 			jQuery("input#maxCost-3").val(jQuery("#slider-3").slider("values",1));
+	  }
+	});
+
+	jQuery("#slider-1-mob").slider({
+		min: 0,
+		max: 35000,
+		values: [698, 29698],
+		range: true,
+		stop: function(event, ui) {
+			jQuery("input#minCost-1-mob").val(jQuery("#slider-1-mob").slider("values",0));
+			jQuery("input#maxCost-1-mob").val(jQuery("#slider-1-mob").slider("values",1));
+	  },
+	  slide: function(event, ui){
+			jQuery("input#minCost-1-mob").val(jQuery("#slider-1-mob").slider("values",0));
+			jQuery("input#maxCost-1-mob").val(jQuery("#slider-1-mob").slider("values",1));
+	  }
+	});
+
+	jQuery("#slider-2-mob").slider({
+		min: 0,
+		max: 7000,
+		values: [963, 2987],
+		range: true,
+		stop: function(event, ui) {
+			jQuery("input#minCost-2-mob").val(jQuery("#slider-2-mob").slider("values",0));
+			jQuery("input#maxCost-2-mob").val(jQuery("#slider-2-mob").slider("values",1));
+	  },
+	  slide: function(event, ui){
+			jQuery("input#minCost-2-mob").val(jQuery("#slider-2-mob").slider("values",0));
+			jQuery("input#maxCost-2-mob").val(jQuery("#slider-2-mob").slider("values",1));
+	  }
+	});
+
+	jQuery("#slider-3-mob").slider({
+		min: 0,
+		max: 7000,
+		step: 200,
+		values: [800, 5000],
+		range: true,
+		stop: function(event, ui) {
+			jQuery("input#minCost-3-mob").val(jQuery("#slider-3-mob").slider("values",0));
+			jQuery("input#maxCost-3-mob").val(jQuery("#slider-3-mob").slider("values",1));
+	  },
+	  slide: function(event, ui){
+			jQuery("input#minCost-3-mob").val(jQuery("#slider-3-mob").slider("values",0));
+			jQuery("input#maxCost-3-mob").val(jQuery("#slider-3-mob").slider("values",1));
 	  }
 	});
 });
@@ -127,9 +210,7 @@ $(document).ready(function() {
 
 	$('#hamburger').click(function() {
 		var menu_mobile = $('.menu-mobile');
-		menu_mobile.toggleClass('menu-mobile--show');
-
-		
+		menu_mobile.toggleClass('menu-mobile--show');		
 	});
 });
 (function($){
@@ -218,6 +299,19 @@ $(document).ready(function() {
 
 	$('.menu-mobile__close').click(function() {
 		$(this).parent().parent().parent().toggleClass('menu-mobile__in--show');
+	});
+});
+$(document).ready(function() {
+	$('.mobile-filter-btn').click(function(event) {
+		event.preventDefault();
+
+		var mobile_filter = $('.mobile-filter');
+
+		if(mobile_filter.hasClass('mobile-filter--show')) {
+			mobile_filter.removeClass('mobile-filter--show');
+		} else {
+			mobile_filter.addClass('mobile-filter--show');
+		}		
 	});
 });
 $(function() {
@@ -319,4 +413,12 @@ $(document).ready(function () {
 
 $(document).ready(function(){
   $(".tabs").lightTabs();
+});
+$(window).on("load",function(){    
+	$(".testimonial").mCustomScrollbar({
+	  axis: "y",
+	  advanced:{
+			autoExpandHorizontalScroll:true
+		}
+	});    
 });

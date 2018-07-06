@@ -7,7 +7,36 @@ div.menu-mobile__in
 		li.menu-mobile__item.menu-mobile__dropdown 
 			a.menu-mobile__nav(href="#") Удилища
 
-			include menu-mobile__in2.pug
+			div.menu-mobile__in
+				ul.menu-mobile__list.menu-mobile__cat
+					li.menu-mobile__item.menu-mobile__item--white-b
+						span.menu-mobile__close
+							+icon('icon__arrow-left')
+
+					li.menu-mobile__item 
+						a(href="#") 
+							+icon('icon__spinning')
+							|Спининговые
+
+					li.menu-mobile__item 
+						a(href="#") 
+							+icon('icon__casting')
+							|Кастинговые
+
+					li.menu-mobile__item
+						a.menu-mobile__nav(href="#") 
+							+icon('icon__plug-in')
+							|Штекерные
+
+					li.menu-mobile__item 
+						a(href="#") 
+							+icon('icon__float')
+							|Поплавочные
+
+					li.menu-mobile__item 
+						a(href="#") 
+							+icon('icon__feeder')
+							|Фидерные
 
 		li.menu-mobile__item.menu-mobile__dropdown
 			a.menu-mobile__nav(href="#") Катушки

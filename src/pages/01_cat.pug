@@ -18,7 +18,17 @@ html(lang="ru")
 		
 			include ../blocks/cat/cat.pug
 
+		div.white-block
+			div.container-1180
+				p.text3 Эффективность рыбалки в значительной степени зависит от того, насколько функциональное, надежное и удобное удилище выбрал и приобрел для себя рыболов. Опытные рыбаки знают, что для каждого вида ловли необходимо использовать определенную снасть. 
+					br
+					|Не важно, являетесь вы начинающим рыболовом или профессионалом, у нас вы непременно подберете рыболовную удочку, подходящую вам по качеству, рабочим характеристикам и стоимости, чем обеспечите себе великолепный улов и непревзойденное удовольствие от процесса.
+
 		include ../blocks/bottom/bottom.pug
-		+bottom({subscribe: true})
+		+bottom({subscribe: true, brands_line: true})
+
+		include ../blocks/menu-mobile/menu-mobile.pug
+
+		include ../blocks/mobile-filter/mobile-filter.pug
 
 		include include/script.pug

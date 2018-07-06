@@ -6,7 +6,7 @@ div.cat
 		div.cat__icons
 			i.cat__icon-list
 				+icon('icon__cat-line')
-			i.cat__icon-filter
+			i.cat__icon-filter.mobile-filter-btn
 				+icon('icon__setings')
 
 		div.cat__icons-big
@@ -63,3 +63,9 @@ div.cat
 
 				li.cat__item
 					+product({con2: true, new: 'Новинка', spec: 'Спецпредложение', img: 'product__img-01.jpg', title: 'Удилище нахлыстовое SALMO Diamond SKY 34563456', price: '1 825', not: 'Нет в наличии'})
+
+			div.cat__show-more
+				+btn({text: 'Показать еще'})
+
+			div.cat__pagination
+				include ../pagination/pagination.pug

@@ -1,0 +1,24 @@
+.brands-line {
+	overflow: hidden;
+}
+.brands-line__list {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+.brands-line__item {
+	padding: 0 24px;
+
+	@media(min-width: 768px) {
+		padding: 0 34px;
+	}
+}
+.brands-line .mCSB_scrollTools_horizontal {
+	opacity: 0;
+}
+.brands-line:hover .mCSB_scrollTools_horizontal {
+	opacity: 1;
+}
