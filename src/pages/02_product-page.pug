@@ -7,11 +7,21 @@ html(lang="ru")
 		include ../blocks/header-mobile/header-mobile.pug
 		include ../blocks/header/header.pug
 
-		div.container-1580
-			include ../blocks/breadcrumbs/breadcrumbs.pug
+		div.content
+			div.container-1580
+				div.breadcrumbs
+					ul.breadcrumbs__list
+						li.breadcrumbs__item
+							a.breadcrumbs__link(href="#") Главная
 
-		div.container-fluid-sm
-			include ../blocks/product-page/product-page.pug
+						li.breadcrumbs__item
+							a.breadcrumbs__link(href="#") Удилища
+
+						li.breadcrumbs__item.breadcrumbs__item--active
+							span Удилище нахлыстовое Salmo Diamond SKY FLY
+
+			div.container-fluid-sm
+				include ../blocks/product-page/product-page.pug
 
 		include ../blocks/bottom/bottom.pug
 		+bottom({subscribe: true})

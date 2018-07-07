@@ -1,15 +1,7 @@
-.product-page__header {
-	padding: 0 20px;
-
-	@media(min-width: 768px) {
-		padding: 0;
-	}
-}
 
 @import '__top/__top';
 @import '__table/__table';
 @import '__bottom/__bottom';
-@import '__icons/__icons';
 @import '__title/__title';
 @import '__properties/__properties';
 @import '__buy/__buy';

@@ -1,0 +1,57 @@
+.product-page__icons {
+	padding: 31px 20px 42px 20px;  
+	background-color: #ffffff;
+
+	@media(min-width: 768px) {
+		padding: 31px 20px 37px 23px;  
+	}
+	@media(min-width: 1200px) {
+		padding: 41px 30px 47px 30px;  
+	}
+}
+.product-page__icons-list {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: row;
+	list-style: none;
+	align-items: center;
+	justify-content: space-between;
+}
+.product-page__icons-item {
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 15px;
+	color: #4D4D4D;
+	text-align: center;
+
+	@media(min-width: 768px) {
+		font-size: 14px;
+	}
+}
+.product-page__icons-item:nth-child(2) {
+	padding: 0 20px;
+}
+.product-page__icons-item span {
+	display: block;
+	padding-top: 4px;
+
+	@media(min-width: 768px) {
+		padding-top:14px;
+	}
+}
+.product-page__icons-item .icon__shield {
+	width: 27px;
+	height: 30px;
+	fill: #4A4A4A;
+}
+.product-page__icons-item .icon__aircraft {
+	width: 36px;
+	height: 30px;
+	fill: #4A4A4A;
+}
+.product-page__icons-item .icon__gift {
+	width: 26px;
+	height: 30px;
+	fill: #4A4A4A;
+}

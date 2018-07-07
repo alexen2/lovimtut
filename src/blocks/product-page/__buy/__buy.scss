@@ -1,0 +1,111 @@
+.product-page__buy {
+	padding: 10px 20px 29px 20px;
+
+	@media(min-width: 768px) {
+	padding: 10px 0 29px 0;
+	}
+	@media(min-width: 1200px) {
+	padding: 0 0 19px 0;
+	}
+}
+.product-page__buy-old-price {
+	height: 20px;
+	overflow: hidden;
+}
+.product-page__buy-old-price span {
+	font-size: 14px;
+	font-weight: 400;
+	text-decoration: line-through;
+	color: #D0021B;
+}
+.product-page__buy-action {
+	padding-top: 1px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: flex-end;
+
+	@media(min-width: 768px) {
+		padding-top: 10px;
+		justify-content: flex-start;
+		align-items: center;
+	}
+	@media(min-width: 1200px) {
+		padding-top: 9px;
+	}
+}
+.product-page__buy-price {
+	padding-right: 20px;
+	overflow: hidden;
+	order: 1;
+}
+.product-page__buy-price span {
+	font-size: 36px;
+	font-weight: bold;
+	color: $color-blue;
+}
+.product-page__buy-price b {
+	padding-left: 10px;
+	font-size: 24px;
+	font-weight: bold;
+}
+.product-page__buy-cart {
+	width: 100%;
+	padding-top: 23px;
+	order: 3;
+
+	@media(min-width: 768px) {
+		width: 280px;
+		padding: 0 39px 0 71px;
+		order: 2;
+	}
+	@media(min-width: 1200px) {
+		padding: 1px 39px 0 19px;
+	}
+}
+.product-page__buy-cart .btn {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	padding-left: 44px;
+	font-size: 14px;
+	font-weight: 600px;
+}
+.product-page__buy-cart .btn__text {
+	margin: 0 21px;
+	line-height: 39px;
+
+	@media(min-width: 768px) {
+		line-height: 38px;
+	}
+}
+.product-page__buy-cart .btn .icon__cart {
+	width: 20px;
+	height: 16px;
+	fill: #ffffff;
+}
+.product-page__buy-star {
+	order: 2;
+	padding-bottom: 5px;
+
+	@media(min-width: 768px) {
+		order: 3;
+		padding-bottom: 0;
+	}
+	@media(min-width: 1200px) {
+		padding-top: 1px;
+	}
+}
+.product-page__buy-star .btn{
+	width: 40px;
+  height: 40px;
+  border: 1px solid rgba(0,0,0,0.2);
+  background-color: transparent;
+  border-radius: 50%;
+	box-sizing: border-box;
+}
+.product-page__buy-star .icon__cart {
+	width: 20px;
+  height: 20px;
+}
