@@ -1,6 +1,9 @@
 .cat-filter {
 	max-width: 280px;
 }
+.cat-filter__no-header {
+	padding-top: 9px;
+}
 .cat-filter__block {
 	border-bottom: 1px solid #CFCFCF;
 	padding-bottom: 27px;
@@ -67,6 +70,7 @@
 	justify-content: space-between;
 	align-items: center;
 	padding-bottom: 16px;
+	min-height: 7px;
 }
 .cat-filter__header span {
 

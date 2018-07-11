@@ -1,0 +1,19 @@
+.special-offer {
+	padding: 4px 30px 6px 30px;
+	background: linear-gradient(263.7deg, rgba(141, 186, 63, 0.9) 69.29%, rgba(66, 147, 33, 0.9) 228.24%);
+	font-weight: bold;
+	line-height: 20px;
+	font-size: 10px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #FFFFFF;
+
+	@media(min-width: 768px) {
+		padding: 10px 25px 10px 25px;
+		line-height: 11px;
+		font-size: 11px;
+		border-radius: 20px;
+		width: auto;
+		display: inline-block;
+	}
+}

@@ -1,5 +1,4 @@
-.mobile-filter {
-	background-color: rgba(0, 0, 0, 0.6);
+.mobile-filter {	
 	position: fixed;
 	top: 0;
 	left: -100%;
@@ -8,6 +7,10 @@
 	overflow-x: hidden;
 	overflow-y: auto;
 	z-index: 2000;
+
+	@media(min-width: 768px) {
+		background-color: rgba(0, 0, 0, 0.6);
+	}
 }
 .mobile-filter--show {
 	left: 0;
@@ -22,10 +25,10 @@
 	top: 0;
 	left: -100%;			
 	z-index: 2001;
+	transition: all 0.4s;
 
 	@media(min-width: 768px) {		
-		max-width: 364px;	
-		transition: all 0.4s;	
+		max-width: 364px;				
 	}
 }
 .mobile-filter--show .mobile-filter__in {

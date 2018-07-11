@@ -2,10 +2,13 @@
 	padding: 10px 20px 29px 20px;
 
 	@media(min-width: 768px) {
-	padding: 10px 0 29px 0;
+		padding: 10px 0 29px 0;
 	}
 	@media(min-width: 1200px) {
-	padding: 0 0 19px 0;
+		padding: 0 0 19px 0;
+	}
+	@media(min-width: 1720px) {
+		padding: 8px 0 30px 0;
 	}
 }
 .product-page__buy-old-price {
@@ -39,6 +42,10 @@
 	padding-right: 20px;
 	overflow: hidden;
 	order: 1;
+
+	@media(min-width: 1720px) {
+		flex: 0 0 202px;
+	}
 }
 .product-page__buy-price span {
 	font-size: 36px;
@@ -108,4 +115,11 @@
 .product-page__buy-star .icon__cart {
 	width: 20px;
   height: 20px;
+}
+.product-page__buy-star .btn:hover {
+	border: 1px solid rgba(30, 172, 246, 1);
+}
+.product-page__buy-star .btn:hover .icon {
+	transition: all 0.6s;
+	fill: rgba(30, 172, 246, 1);
 }

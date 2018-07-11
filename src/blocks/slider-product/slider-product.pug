@@ -1,0 +1,23 @@
+div.slider-product
+	div.slider-product__slider
+		ul.swiper-wrapper
+			li.swiper-slide
+				img(src="images/slider-product__01.jpg", alt="")
+			li.swiper-slide
+				img.product-page__slid-img(src="images/slider-product__02.jpg", alt="")
+			li.swiper-slide
+				img(src="images/slider-product__01.jpg", alt="")
+			li.swiper-slide
+				img(src="images/slider-product__02.jpg", alt="")
+
+		div.slider-product__next
+			include ../icon/icon.pug
+			+icon('icon__arrow-left')
+
+		div.slider-product__prev
+			+icon('icon__arrow-right')
+
+		div.slider-product__pag
+
+	div.slider-product__img
+		img(src="images/slider-product__01.jpg", alt="")
